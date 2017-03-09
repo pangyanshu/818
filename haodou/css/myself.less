@@ -1,0 +1,164 @@
+@import url("reset.css");
+
+/*
+ * 封装浮动
+ */
+.f(@f){
+    float: @f;
+}
+/*
+ * 相对定位
+ */
+.r{
+    position: relative;
+}
+/*
+ * 绝对定位
+ */
+.a{
+    position: absolute;
+} 
+html{
+    font-size: 62.5%;
+}
+header{
+    height: 6.5rem;
+    background: #1769cc;
+    .r;
+     text-align: center;
+    line-height: 6.5rem;
+     
+    a{
+      display: inline-block;
+      width: 1.8rem;
+      height: 2.6rem;
+      background: url(../img/back.png) no-repeat;
+      background-size: 1.8rem 2.6rem;
+      .a;
+      top: 19px;
+      left: 18px;
+      }
+    h3{
+      
+         font-size: 16px;
+         font-weight: bold;
+         color:white;
+         font-family: "宋体";
+      }
+    span{
+        display: inline-block;
+        width: 2.7rem;
+        height: 1.9rem;
+        background: url(../矩形-5.png) no-repeat;
+        background-size: 27px 19px;
+        .a;
+        top: 24px;
+        right: 16px;
+    }  
+
+    
+}
+main{
+//  display: -webkit-box;
+   .good{
+         height: 9.6rem;
+         background: #aeaeae;
+         font-family: 宋体;
+//  font-weight: bold;
+    dl{
+        margin-left: 15px;
+        dt{
+            font-size: 20px;
+           line-height: 45px;
+            i{
+                color: #fe9235;
+            }
+        }
+        dd{
+            line-height: 30px;
+            font-size: 14px;
+            margin-right: 23px;
+            span{
+                font-size:14px;
+                color: #74bffd;
+            }
+        }
+      }
+    }
+    .My_payment{
+        height: 9.2rem;
+        overflow: hidden;
+         border-bottom: 1px solid #f5f5f5;
+        h3{
+            margin-left: 1.5rem;
+            font-size: 15px;
+            font-weight: bold;
+              height: 4.3rem;
+            line-height: 4.3rem;
+           border-bottom: 1px solid #f5f5f5;
+        }
+        ul{ 
+              margin-left: 1.5rem;
+              height: 62px;
+             li{
+                 margin-top: 7px;
+                width: 142px;
+                height: 43px;
+                .f(left);
+                text-align: center;
+                p{
+                    color: #ffcfab;
+                    font-size: 20px;
+                }
+                span{
+                    color: #bebebe;
+                    font-size: 14px;
+                }
+            }
+            li:nth-child(1){
+                border-right: 1px solid #f5f5f5;
+            }
+          }
+     }
+    .Medical_request{
+           height: 4.5rem;
+           border-bottom: 1px solid #f5f5f5;
+           line-height: 4.5rem;
+           h3{
+               margin-left: 15px;
+               font-size: 16px;
+               .f(left);
+           }
+           span{
+               display: block;
+               width: 11px;
+               height: 16px;
+               background: url(../img/圆角矩形-25-拷贝-2.png) no-repeat;
+               background-size: 11px 16px;
+               .f(right);
+               margin: 14px 14px;
+           }
+         }
+         .Internet_consulting{
+         
+           height: 4.5rem;
+           border-bottom: 1px solid #f5f5f5;
+           line-height: 4.5rem;
+           h3{
+               margin-left: 15px;
+               font-size: 16px;
+               .f(left);
+           }
+           span{
+               display: block;
+               width: 11px;
+               height: 16px;
+               background: url(../img/圆角矩形-25-拷贝-2.png) no-repeat;
+               background-size: 11px 16px;
+               .f(right);
+               margin: 14px 14px;
+           }
+         }
+         
+    
+}

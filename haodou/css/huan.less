@@ -1,0 +1,61 @@
+@import url("reset.css");
+
+/*
+ * 封装浮动
+ */
+.f(@f){
+    float: @f;
+}
+/*
+ * 相对定位
+ */
+.r{
+    position: relative;
+}
+/*
+ * 绝对定位
+ */
+.a{
+    position: absolute;
+}
+html{
+    font-size: 62.5%;
+//  display: -webkit-box;
+}
+header{
+    height: 65px;
+    background: #1769cc;
+    .r;
+     text-align: center;
+    line-height: 65px;
+     
+    a{
+      display: inline-block;
+      width: 18px;
+      height: 26px;
+      background: url(../img/back.png) no-repeat;
+      background-size: 18px 26px;
+      .a;
+      top: 19px;
+      left: 18px;
+      }
+    h3{
+      
+         font-size: 16px;
+         font-weight: bold;
+         color:white;
+         font-family: "宋体";
+      }
+    span{
+        display: inline-block;
+        width: 27px;
+        height: 19px;
+        background: url(../矩形-5.png) no-repeat;
+        background-size: 27px 19px;
+        .a;
+        top: 24px;
+        right: 16px;
+    }  
+
+    
+}

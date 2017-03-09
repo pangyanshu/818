@@ -1,0 +1,52 @@
+@import url("reset.css");
+/*
+ * 封装浮动
+ */
+/*
+ * 相对定位
+ */
+.r {
+  position: relative;
+}
+/*
+ * 绝对定位
+ */
+.a {
+  position: absolute;
+}
+html {
+  font-size: 62.5%;
+}
+header {
+  height: 65px;
+  background: #1769cc;
+  position: relative;
+  text-align: center;
+  line-height: 65px;
+}
+header a {
+  display: inline-block;
+  width: 18px;
+  height: 26px;
+  background: url(../img/back.png) no-repeat;
+  background-size: 18px 26px;
+  position: absolute;
+  top: 19px;
+  left: 18px;
+}
+header h3 {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  font-family: "宋体";
+}
+header span {
+  display: inline-block;
+  width: 27px;
+  height: 19px;
+  background: url(../矩形-5.png) no-repeat;
+  background-size: 27px 19px;
+  position: absolute;
+  top: 24px;
+  right: 16px;
+}

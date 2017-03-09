@@ -1,0 +1,110 @@
+@import url("reset.css");
+/*
+ * 封装浮动
+ */
+/*
+ * 相对定位
+ */
+.r {
+  position: relative;
+}
+/*
+ * 绝对定位
+ */
+.a {
+  position: absolute;
+}
+html {
+  font-size: 62.5%;
+}
+header {
+  height: 65px;
+  background: #1769cc;
+  position: relative;
+  text-align: center;
+  line-height: 65px;
+}
+header a {
+  display: inline-block;
+  width: 18px;
+  height: 26px;
+  background: url(../img/back.png) no-repeat;
+  background-size: 18px 26px;
+  position: absolute;
+  top: 19px;
+  left: 18px;
+}
+header h3 {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  font-family: "宋体";
+}
+header span {
+  display: inline-block;
+  width: 27px;
+  height: 19px;
+  background: url(../矩形-5.png) no-repeat;
+  background-size: 27px 19px;
+  position: absolute;
+  top: 24px;
+  right: 16px;
+}
+main .num {
+  height: 11.9rem;
+  background: #1769cc;
+  text-align: center;
+}
+main .num h1 {
+  padding-top: 2rem;
+  font-size: 30px;
+  color: white;
+}
+main .num span {
+  font-size: 20px;
+  color: white;
+}
+main .Balance_of_payments {
+  height: 4.5rem;
+  background: #f5f6f7;
+  line-height: 4.5rem;
+}
+main .Balance_of_payments h3 {
+  font-size: 17px;
+  margin-left: 15px;
+}
+main .Quality_reservation {
+  height: 6rem;
+  border-bottom: 1px solid #ededed;
+}
+main .Quality_reservation dl {
+  margin-left: 15px ;
+}
+main .Quality_reservation dl dt {
+  font-size: 16px;
+  float: left;
+}
+main .Quality_reservation dl dd {
+  color: #c2c2c2;
+  float: left;
+}
+main .Quality_reservation dl dd:nth-child(3) {
+  font-size: 16px;
+  color: #000000;
+  float: right;
+  margin-right: 20px;
+}
+main .more {
+  height: 6rem;
+  border-bottom: 1px solid #ededed;
+}
+main .more p {
+  line-height: 6rem;
+  text-align: center;
+  font-size: 14px;
+  color: #73b5f3;
+}
+footer {
+  height: 4rem;
+  background: #f5f6f7;
+}

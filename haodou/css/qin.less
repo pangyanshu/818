@@ -1,0 +1,272 @@
+@import url("reset.css");
+//封装宽 高 背景
+.whb(@w,@h,@b){
+    width:@w;
+    height:@h;
+    background:@b;
+}
+/*
+ * 封装浮动
+ */
+.f(@f){
+    float: @f;
+}
+/*
+ * 相对定位
+ */
+.r{
+    position: relative;
+}
+/*
+ * 绝对定位
+ */
+.a{
+    position: absolute;
+} 
+//使用rem定义
+
+//Html{
+//  font-size: 62.5%;
+//}
+html,body{
+    display:-webkit-box;
+    overflow: hidden;
+}
+header{
+    height: 65px;
+    background: #1769cc;
+    .r;
+    line-height: 65px;
+    text-align: center;
+     
+    a{
+      display: inline-block;
+      width: 18px;
+      height: 26px;
+      background: url(../img/back.png) no-repeat;
+      background-size: 18px 26px;
+      .a;
+      top: 19px;
+      left: 18px;
+      }
+    h3{
+       font-size: 16px;
+         font-weight: bold;
+         color:white;
+         font-family: "宋体";
+       }
+    span{
+        display: inline-block;
+        width: 27px;
+        height: 19px;
+        background: url(../矩形-5.png) no-repeat;
+        background-size: 27px 19px;
+        .a;
+        top: 24px;
+        right: 16px;
+    }  
+
+    
+}
+nav{
+    height: 28px;
+    background: #414b5f;
+    text-align: center;
+    a{
+      color: #848484;   
+      line-height: 28px;
+      font-size: 14px;
+    }
+    
+}
+main{
+    .name{
+       height: 45px; 
+       border: 1px solid #f5f5f5;
+       line-height: 45px;
+       p{
+           font-size: 20px;
+           color: #aeaeae;
+           margin-left: 15px;
+           span{
+               color: #000000;
+           }
+       }
+    }
+    .Amount{
+         height: 45px; 
+         border: 1px solid #f5f5f5;
+         line-height: 45px;
+         p{
+           font-size: 20px;
+           color: #aeaeae;
+           margin-left: 15px;
+           span{
+               color: #000000;
+           }
+       } 
+    }
+    .account_balance{
+        color: #000000;
+        height: 45px;
+        border: 2px solid #eeeeee;
+        line-height: 45px;
+        .r;
+        p{
+            font-size: 18px;
+            font-weight: bold;
+            .f(left);
+           margin-left: 15px;
+        }
+        span{
+            .f(right);
+            i{
+                margin-right: 35px;
+                color: #969696;
+                font-size: 14px;
+            }
+            input{
+                opacity: 0;
+            }
+            
+            input+label{
+                display: block;
+                width: 52px;
+                height: 32px;
+                background: url(../img/椭圆-26-拷贝.png) no-repeat;
+                background-size: 52px 32px;
+                .a;
+                top: 9px;
+                right: -2px;
+
+            }
+        }
+    }
+    .available{
+        color: #000000;
+         height: 45px;
+        border: 2px solid #eeeeee;
+        line-height: 45px;
+        .r;
+        p{
+            font-size: 18px;
+            font-weight: bold;
+            .f(left);
+           margin-left: 15px;
+        }
+        span{
+            .f(right);
+            i{
+                margin-right: 55px;
+                color: #969696;
+                font-size: 14px;
+            }
+            input{
+                opacity: 0;
+            }
+            input+label{
+                display: block;
+                width: 52px;
+                height: 32px;
+                background: url(../img/椭圆-26-拷贝.png) no-repeat;
+                background-size: 52px 32px;
+                .a;
+                top: 9px;
+                right: -2px;
+
+            }
+        }
+   
+        
+    }
+    .also_need_to_pay{
+        color: #000000;
+        margin-top: 12px;
+         height: 45px;
+        border: 2px solid #eeeeee;
+        line-height: 45px;
+        p{
+            font-size: 18px;
+            margin-left: 15px;
+            font-weight: bold;
+        }
+        span{
+               font-size: 18px;
+               font-weight: bold;
+               color: #ff8c28;
+        } 
+    }
+    .weixin{
+         color: #000000;
+         height: 45px;
+        border: 2px solid #eeeeee;
+        line-height: 45px;
+         margin-left: 15px;
+        p{
+           .f(left);
+            font-size: 14px;
+            font-weight: bold;
+            padding-left: 11px;
+            i{
+                display: block;
+                width: 29px;
+                height: 25px;
+                background: url(../img/wei.png) no-repeat;
+                background-size: 29px 25px;
+                .f(left);
+             
+                margin-top: 14px;
+                
+            }
+            span{
+            font-size: 14px;
+            font-weight: bold;
+            padding-left: 11px;
+            margin-top: 14px;
+          }
+        }
+    }
+    .zhifubao{
+          color: #000000;
+         height: 45px;
+        border: 2px solid #eeeeee;
+        line-height: 45px;
+         margin-left: 15px;
+        p{
+           .f(left);
+            i{
+                display: block;
+                width: 29px;
+                height: 25px;
+                background: url(../img/zhi.png) no-repeat;
+                background-size: 29px 25px;
+                .f(left);
+                margin-left: 11px;
+                margin-top: 14px;
+                
+          }
+          span{
+               font-size: 14px;
+            font-weight: bold;
+            padding-left: 11px;
+            margin-top: 14px;
+          }
+        }
+    }
+}
+footer{
+    .Also_need_to_pay{
+     
+        margin-top: 35px;
+       height: 70px;
+       background: #46a0f0;
+       border-radius: 8px;
+       text-align: center;
+       line-height: 78px;
+       h3{
+           font-size: 20px;
+           color: white;
+       }
+     
+    }
+}

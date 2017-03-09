@@ -1,0 +1,194 @@
+@import url("reset.css");
+/*
+ * 封装浮动
+ */
+/*
+ * 相对定位
+ */
+.r {
+  position: relative;
+}
+/*
+ * 绝对定位
+ */
+.a {
+  position: absolute;
+}
+header {
+  height: 65px;
+  background: #1769cc;
+  position: relative;
+  text-align: center;
+  line-height: 65px;
+}
+header a {
+  display: inline-block;
+  width: 18px;
+  height: 26px;
+  background: url(../img/back.png) no-repeat;
+  background-size: 18px 26px;
+  position: absolute;
+  top: 19px;
+  left: 18px;
+}
+header h3 {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  font-family: "宋体";
+}
+header span {
+  display: inline-block;
+  width: 27px;
+  height: 19px;
+  background: url(../矩形-5.png) no-repeat;
+  background-size: 27px 19px;
+  position: absolute;
+  top: 24px;
+  right: 16px;
+}
+main {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  background: #f5f6f7;
+}
+main .fee_scale {
+  height: 89px;
+  border: 1px solid #eeeeee;
+  -webkit-box-flex: 1;
+}
+main .fee_scale p {
+  padding: 8px 0 5px 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+main .fee_scale .fee {
+  margin-left: 15px;
+  font-size: 14px;
+  color: #7d7878;
+}
+main .account_balance {
+  color: #000000;
+  height: 45px;
+  border: 2px solid #eeeeee;
+  line-height: 45px;
+  -webkit-box-flex: 1;
+  position: relative;
+}
+main .account_balance p {
+  font-size: 18px;
+  font-weight: bold;
+  float: left;
+  margin-left: 15px;
+}
+main .account_balance span {
+  float: right;
+}
+main .account_balance span i {
+  margin-right: 35px;
+  color: #969696;
+  font-size: 14px;
+}
+main .account_balance span input {
+  opacity: 0;
+}
+main .account_balance span input + label {
+  display: block;
+  width: 52px;
+  height: 32px;
+  background: url(../img/椭圆-26-拷贝.png) no-repeat;
+  background-size: 52px 32px;
+  position: absolute;
+  top: 9px;
+  right: -2px;
+}
+main .available {
+  -webkit-box-flex: 1;
+  color: #000000;
+  height: 45px;
+  border: 2px solid #eeeeee;
+  line-height: 45px;
+  position: relative;
+}
+main .available p {
+  font-size: 18px;
+  font-weight: bold;
+  float: left;
+  margin-left: 15px;
+}
+main .available span {
+  float: right;
+}
+main .available span i {
+  margin-right: 55px;
+  color: #969696;
+  font-size: 14px;
+}
+main .available span input {
+  opacity: 0;
+}
+main .available span input + label {
+  display: block;
+  width: 52px;
+  height: 32px;
+  background: url(../img/椭圆-26-拷贝.png) no-repeat;
+  background-size: 52px 32px;
+  position: absolute;
+  top: 9px;
+  right: -2px;
+}
+main .also_need_to_pay {
+  -webkit-box-flex: 1;
+  margin-top: 12px;
+  height: 45px;
+  border: 2px solid #eeeeee;
+  line-height: 45px;
+}
+main .also_need_to_pay p {
+  font-size: 18px;
+  margin-left: 15px;
+  font-weight: bold;
+}
+main .also_need_to_pay span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ff8c28;
+}
+main .i_agree {
+  height: 45px;
+  line-height: 45px;
+}
+main .i_agree p {
+  font-size: 14px;
+  margin-left: 15px;
+}
+main .i_agree span {
+  font-size: 14px;
+  color: #46a0f0;
+  margin-left: 11px;
+}
+main .Also_need_to_pay {
+  margin-top: 35px;
+  height: 70px;
+  background: #46a0f0;
+  border-radius: 8px;
+  text-align: center;
+  line-height: 78px;
+}
+main .Also_need_to_pay h3 {
+  font-size: 20px;
+  color: white;
+}
+main .promise {
+  margin-top: 56px;
+}
+main .promise dl {
+  margin-left: 15px;
+}
+main .promise dl dt {
+  font-size: 20px;
+}
+main .promise dl dd {
+  font-size: 15px;
+  color: #666666;
+}

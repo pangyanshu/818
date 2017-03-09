@@ -1,0 +1,241 @@
+@import url("reset.css");
+/*
+ * 封装浮动
+ */
+/*
+ * 相对定位
+ */
+.r {
+  position: relative;
+}
+/*
+ * 绝对定位
+ */
+.a {
+  position: absolute;
+}
+html,
+body {
+  display: -webkit-box;
+  overflow: hidden;
+}
+header {
+  height: 65px;
+  background: #1769cc;
+  position: relative;
+  line-height: 65px;
+  text-align: center;
+}
+header a {
+  display: inline-block;
+  width: 18px;
+  height: 26px;
+  background: url(../img/back.png) no-repeat;
+  background-size: 18px 26px;
+  position: absolute;
+  top: 19px;
+  left: 18px;
+}
+header h3 {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  font-family: "宋体";
+}
+header span {
+  display: inline-block;
+  width: 27px;
+  height: 19px;
+  background: url(../矩形-5.png) no-repeat;
+  background-size: 27px 19px;
+  position: absolute;
+  top: 24px;
+  right: 16px;
+}
+nav {
+  height: 28px;
+  background: #414b5f;
+  text-align: center;
+}
+nav a {
+  color: #848484;
+  line-height: 28px;
+  font-size: 14px;
+}
+main .name {
+  height: 45px;
+  border: 1px solid #f5f5f5;
+  line-height: 45px;
+}
+main .name p {
+  font-size: 20px;
+  color: #aeaeae;
+  margin-left: 15px;
+}
+main .name p span {
+  color: #000000;
+}
+main .Amount {
+  height: 45px;
+  border: 1px solid #f5f5f5;
+  line-height: 45px;
+}
+main .Amount p {
+  font-size: 20px;
+  color: #aeaeae;
+  margin-left: 15px;
+}
+main .Amount p span {
+  color: #000000;
+}
+main .account_balance {
+  color: #000000;
+  height: 45px;
+  border: 2px solid #eeeeee;
+  line-height: 45px;
+  position: relative;
+}
+main .account_balance p {
+  font-size: 18px;
+  font-weight: bold;
+  float: left;
+  margin-left: 15px;
+}
+main .account_balance span {
+  float: right;
+}
+main .account_balance span i {
+  margin-right: 35px;
+  color: #969696;
+  font-size: 14px;
+}
+main .account_balance span input {
+  opacity: 0;
+}
+main .account_balance span input + label {
+  display: block;
+  width: 52px;
+  height: 32px;
+  background: url(../img/椭圆-26-拷贝.png) no-repeat;
+  background-size: 52px 32px;
+  position: absolute;
+  top: 9px;
+  right: -2px;
+}
+main .available {
+  color: #000000;
+  height: 45px;
+  border: 2px solid #eeeeee;
+  line-height: 45px;
+  position: relative;
+}
+main .available p {
+  font-size: 18px;
+  font-weight: bold;
+  float: left;
+  margin-left: 15px;
+}
+main .available span {
+  float: right;
+}
+main .available span i {
+  margin-right: 55px;
+  color: #969696;
+  font-size: 14px;
+}
+main .available span input {
+  opacity: 0;
+}
+main .available span input + label {
+  display: block;
+  width: 52px;
+  height: 32px;
+  background: url(../img/椭圆-26-拷贝.png) no-repeat;
+  background-size: 52px 32px;
+  position: absolute;
+  top: 9px;
+  right: -2px;
+}
+main .also_need_to_pay {
+  color: #000000;
+  margin-top: 12px;
+  height: 45px;
+  border: 2px solid #eeeeee;
+  line-height: 45px;
+}
+main .also_need_to_pay p {
+  font-size: 18px;
+  margin-left: 15px;
+  font-weight: bold;
+}
+main .also_need_to_pay span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ff8c28;
+}
+main .weixin {
+  color: #000000;
+  height: 45px;
+  border: 2px solid #eeeeee;
+  line-height: 45px;
+  margin-left: 15px;
+}
+main .weixin p {
+  float: left;
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 11px;
+}
+main .weixin p i {
+  display: block;
+  width: 29px;
+  height: 25px;
+  background: url(../img/wei.png) no-repeat;
+  background-size: 29px 25px;
+  float: left;
+  margin-top: 14px;
+}
+main .weixin p span {
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 11px;
+  margin-top: 14px;
+}
+main .zhifubao {
+  color: #000000;
+  height: 45px;
+  border: 2px solid #eeeeee;
+  line-height: 45px;
+  margin-left: 15px;
+}
+main .zhifubao p {
+  float: left;
+}
+main .zhifubao p i {
+  display: block;
+  width: 29px;
+  height: 25px;
+  background: url(../img/zhi.png) no-repeat;
+  background-size: 29px 25px;
+  float: left;
+  margin-left: 11px;
+  margin-top: 14px;
+}
+main .zhifubao p span {
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 11px;
+  margin-top: 14px;
+}
+footer .Also_need_to_pay {
+  margin-top: 35px;
+  height: 70px;
+  background: #46a0f0;
+  border-radius: 8px;
+  text-align: center;
+  line-height: 78px;
+}
+footer .Also_need_to_pay h3 {
+  font-size: 20px;
+  color: white;
+}
