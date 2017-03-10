@@ -1,0 +1,166 @@
+@import url("reset.css");
+.whb(@w,@h,@b){
+    width: @w;
+    height: @h;
+    background: @b;
+};
+.bo(@dw:vertical){
+    display: -webkit-box;
+    -webkit-box-orient: @dw;
+    
+}
+html{
+    font-size: 62.5%;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+      font-family: "宋体";
+}
+.box{
+    .whb(100%,100%,none);
+    .bo;
+    header{
+        .whb(100%,4rem,none);
+        .bo(horizontal);
+        .s_header_left{
+            .whb(2rem,4rem,none);
+            img{
+                .whb(1rem,2rem,none);
+                padding: 10px 8px;
+            }
+            
+        }
+        .s_header_right{
+            -webkit-box-flex: 1;
+            text-align: center;
+            line-height: 4rem;
+            font-size: 1.6rem;
+        }
+    }
+    section{
+       
+        -webkit-box-flex: 1;
+        .hot_pwd1{
+            .whb(100%,3.5rem,none);
+            border-bottom: 1px solid #cccccc;
+            input{
+                 display: block;
+                 -webkit-box-flex: 1;
+                border: none;
+                padding: 10px;
+                background: none;
+                width: 100%;
+                box-sizing: border-box;
+                outline:none;
+            }
+        }
+        .hot_pwd2{
+            .whb(100%,3.5rem,none);
+            border-bottom: 1px solid #cccccc;
+            input{
+                display: block;
+                -webkit-box-flex: 1;
+                border: none;
+                padding: 10px;
+                background: none;
+                 width: 100%;
+                box-sizing: border-box;
+                outline:none;
+            }
+        }
+        .hot_pwd3{
+            .whb(100%,3.5rem,none);
+            border-bottom: 1px solid #cccccc;
+            input{
+                display: block;
+                -webkit-box-flex: 1;
+                border: none;
+                padding: 10px;
+                background: none;
+                 width: 100%;
+                box-sizing: border-box;
+                outline:none;
+            }
+        }
+        .hot_pwd4{
+            .whb(100%,3.5rem,none);
+            .bo(horizontal);
+            border-bottom: 1px solid #cccccc;
+            input{
+                display: block;
+                border: none;
+                padding: 10px;
+                -webkit-box-flex: 1;
+                background: none;
+                 width: 100%;
+                box-sizing: border-box;
+                outline:none;
+            }
+            h1{
+                .whb(7rem,3.5rem,none);
+                text-align: center;
+                line-height: 3.5rem;
+                border-left: 1px solid #cccccc;
+            }
+        }
+        .btn{
+            .whb(100%,4rem,none);
+            margin-top: 2rem;
+            button{
+                .whb(100%,4rem,#ff7d1b);
+                border: none;
+                border-radius: 8px;
+                color: white;
+               font-size: 2rem;
+            }
+        }
+        .zhezhao{
+          .whb(auto,auto,none);
+           position: relative;
+           top: -80px;
+          .zhezao_list{
+              .whb(30rem,8rem,white);
+              -webkit-box-flex: 1;
+              text-align: center;
+              border-radius: 8px;
+              margin: 0 auto;
+             img{
+                 .whb(4rem,3rem,none);
+                 margin-top: 10px;
+             }
+          }
+         }
+    }
+}
+//遮罩层
+.zz{
+     .whb(100%,100%,#737373);
+     display: none;
+      position: fixed;
+      top: 0;
+      left: 0;  
+      opacity: 0.4;
+    }
+.zz_con{
+    .whb(100%,13rem,none);
+   padding: 0 3.5rem;
+    position: absolute;
+    left: 0;
+    top: 17.6rem;
+     box-sizing: border-box;
+    display: none;
+    .conment{
+       
+        .whb(100%,13rem,#FFFFFF);
+        border-radius: 0.5rem;
+        text-align: center;
+        img{
+            .whb(4.5rem,auto,none);
+            margin: 1.5rem 0;
+        }
+        p{
+            margin-bottom: 1rem;
+        }
+    }
+}
