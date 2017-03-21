@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>签约说明</title>
+    <link rel="stylesheet" href="css/header.css"/>
+    <link rel="stylesheet" href="css/home.css"/>
+    <link rel="stylesheet" href="css/zz.css"/>
+</head>
+<body>
+<div class="wap">
+    <header>
+        <div class="y_top">
+            <div class="y_left">
+                <img src="img/a1_03.png" alt=""/>
+            </div>
+            <div class="y_center">
+                <h3>签约说明</h3>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="y_qy_main">
+            <div class="clause">
+
+            </div>
+            <div class="clause_on">
+                <input type="checkbox"/>
+                我已仔细阅读签约条款
+            </div>
+            <div class="submit">
+                <button id="button">我想签约</button>
+            </div>
+        </div>
+    </section>
+    <div class="qy"></div>
+    <div class="qy_con">
+        <div class="info">
+            <h3>优橙客服会在5个工作日内联系您！</h3>
+            <span>好的</span>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/jquery-3.1.1.js"></script>
+<script>
+    $("#button").click(function(){
+        $(".qy_con").show();
+        $(".qy").show();
+    })
+    $(".qy_con").click(function(){
+        $(".qy_con").hide();
+        $(".qy").hide();
+    })
+</script>
+</html>

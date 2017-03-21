@@ -1,0 +1,33 @@
+{
+	"index.html": {
+		"resources": [
+			"yc/shouye/a_33.png",
+			"yc/shouye/a_51.png",
+			"yc/shouye/a_07.png",
+			"yc/shouye/a_27.png",
+			"yc/shouye/a_40.png",
+			"yc/shouye/a_29.png",
+			"yc/shouye/a_57.png",
+			"yc/shouye/a_21.png",
+			"yc/shouye/a_16.png",
+			"yc/shouye/a_42.png",
+			"yc/shouye/a_49.png",
+			"yc/shouye/a_23.png",
+			"yc/shouye/a_10.png",
+			"yc/shouye/a_37.png",
+			"js/zepto.min.js",
+			"yc/shouye/a_60.png",
+			"yc/shouye/a_46.png",
+			"js/iscroll.js",
+			"css/shouye.css",
+			"yc/shouye/a_54.png",
+			"yc/shouye/a_03.png",
+			"yc/shouye/a_44.png",
+			"yc/shouye/a_14.png",
+			"css/reset.css",
+			"yc/denglu/a_10.png",
+			"yc/denglu/b1_03.png",
+			"css/zhuceshouye.css"
+		]
+	}
+}

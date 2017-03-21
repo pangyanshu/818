@@ -1,0 +1,58 @@
+@import "reset.css";
+html,
+body,
+.wap {
+  width: 100%;
+  height: 100%;
+  background: none;
+}
+html {
+  font-size: 62.5%;
+}
+.wap {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.wap header {
+  width: 100%;
+  height: 3.5rem;
+  background: #f7f7f7;
+  border-bottom: 0.1rem solid #bfbfbf;
+}
+.wap header .y_top {
+  line-height: 3.5rem;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.wap header .y_top .y_left {
+  margin: 0 0.5rem;
+  box-sizing: border-box;
+  width: 2.5rem;
+  height: 100%;
+  background: none;
+  text-align: center;
+}
+.wap header .y_top .y_left img {
+  vertical-align: middle;
+  width: 0.9rem;
+}
+.wap header .y_top .y_right {
+  margin: 0 0.5rem;
+  box-sizing: border-box;
+  width: 2.5rem;
+  height: 100%;
+  background: none;
+  text-align: center;
+}
+.wap header .y_top .y_right img {
+  vertical-align: middle;
+  width: 1.6rem;
+}
+.wap header .y_top .y_center {
+  -webkit-box-flex: 1;
+}
+.wap header .y_top .y_center h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-align: center;
+}

@@ -1,0 +1,124 @@
+@import url("reset.css");
+.whb(@w,@h,@b){
+    width: @w;
+    height: @h;
+    background: @b;
+};
+.bo(@dw:vertical){
+    display: -webkit-box;
+    -webkit-box-orient: @dw;
+    
+}
+html{
+    font-size: 62.5%;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: "宋体";
+}
+.box{
+    .whb(100%,100%,none);
+//  background: url(../img/bg.png)no-repeat;
+    section{
+        .whb(100%,100%,none);
+        .bo;
+        .s_logo{
+            .whb(100%,20rem,none);
+            position: relative;
+             img{
+                 
+                 .whb(100px,100px,none);
+                 position: absolute;
+                 top: 30%;
+                 left: 40%;
+               
+            }
+            h1{
+               position: absolute;
+                 top: 75%;
+                 left: 49%;  
+                 font-size: 1.4rem;
+                 color: #ccc;
+            }
+        }
+        .s_tel{
+            .whb(100%,4rem,none);
+            .bo(horizontal);
+            img{
+                padding-left:32px ;
+                .whb(3rem,3rem,none);
+                margin-top: 12px;
+            }
+            .s_tel_list{
+                -webkit-box-flex: 1;
+                 border-bottom: 1px solid #ff7d1b;
+                 margin-left:10px ;
+                 margin-right: 24px;
+               input{
+//              padding:6px 40px;
+                margin-left: 10px;
+                border: none;
+                 background:none;
+                outline:none;
+               
+              } 
+            }
+        }
+         .s_pwd{
+            .whb(100%,4rem,none);
+            .bo(horizontal);
+             line-height: 3rem;
+            margin-top: 10px;
+            
+            img{
+                padding-left:32px ;
+                .whb(3rem,3rem,none);
+                 margin-top: 12px;
+
+            }
+            .s_pwd_list{
+                -webkit-box-flex: 1;
+                 border-bottom: 1px solid #ff7d1b;
+                  margin-left:10px ;
+                 margin-right: 24px;
+               input{
+                padding:6px 40px;
+                margin-left: 10px;
+                border: none;
+                 background:none;
+                outline:none;
+               
+              } 
+            }
+            
+        }
+        .botton1{
+             margin-top: 3rem;
+             margin: 10px 15px;
+             button{
+                  .whb(100%,4rem,#ff7d1b);
+                  border: none;
+                  border-radius: 8px;
+                 font-size: 20px;
+                  color: white;
+              }
+        }
+   .s_bottom{
+       .whb(100%,2rem,none);
+       margin-top: 10px;
+       a{
+           float: left;
+           font-size: 1.4px;
+           padding-left:16px;
+           color: #507daf;
+       }
+       span{
+           float: right;
+            font-size: 1.4px;
+            padding-right: 16px;
+            color: #507daf;
+       }
+   }
+    }
+}

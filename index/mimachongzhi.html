@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+	<div>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/chongzhimima.css"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <!--<script src="js/jquery-3.1.1.js"></script>-->
+	    <script src="js/angular-1.3.0.js"></script>
+	    <script src="js/angular-ui-router.min.js"></script>
+	    <script src="js/app.js"></script>
+	</head>
+	<body ui-view="body">
+		<div class="box">
+			<header>
+				<div class="s_header_left"  ui-sref="fan">
+					<img src="yc/denglu/c_03.png"/>
+				</div>
+				<div class="s_header_right">
+					<h1>密码重置</h1>
+				</div>
+			</header>
+			<section>
+				<div class="hot_pwd1">
+					<input type="text" placeholder="请输入新密码" />
+				</div>
+				<div class="hot_pwd2">
+					<input type="text" placeholder="请再次输入密码" />
+				</div>
+				<div class="hot_pwd3">
+					<input type="text" placeholder="请输入手机号" />
+				</div>
+				<div class="hot_pwd4">
+					<input type="text" placeholder="请输入验证码" />
+					<h1>获取验证码</h1>
+				</div>
+				<div class="btn">
+					<button ui-sref="">提交</button>
+				</div>
+			</section>
+			<div class="zz">aa</div>
+				<div class="zz_con">
+					<div class="conment">
+						<img src="yc/denglu/bai_03.png"/>
+						<p>对不起重置失败</p>
+						<p>原因</p>
+					</div>
+				</div>
+		</div>
+	</body>
+<!--	
+	<script type="text/javascript">
+	  $("button").click(function(){
+	  	$(".zz_con").show();
+	  	$(".zz").show();
+	  })
+	  $(".zz_con").click(function(){
+	  	$(".zz_con").hide();
+	  	$(".zz").hide();
+	  })
+	</script>-->
+</html>

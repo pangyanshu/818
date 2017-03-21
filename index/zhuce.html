@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html ng-app="myapp" >
+<div>	
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/chongzhimima.css" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+     <body ui-view>
+		<div class="box">
+			<header>
+				<div class="s_header_left">
+					<img src="yc/denglu/c_03.png" ui-sref="fan" />
+				</div>
+				<div class="s_header_right">
+					<h1>注册</h1>
+				</div>
+			</header>
+			<section>
+				<form ng-app="myApp" ng-controller="validateCtrl" name="myForm" novalidate>
+					<div class="hot_pwd1">
+						<input type="text" placeholder="请输入用户名" name="user" ng-model="user" required />
+						<span style="color:red" ng-show="myForm.user.$dirty && myForm.user.$invalid">
+                         <span ng-show="myForm.user.$error.required">用户名是必须的。</span>
+						</span>
+					</div>
+					<div class="hot_pwd2">
+						<input type="text" placeholder="请输入密码" name="pwd" ng-model="pwd" required />
+						<span style="color:red" ng-show="myForm.pwd.$dirty && myForm.pwd.$invalid">
+						  <span ng-show="myForm.pwd.$error.required">密码是必须的。</span>
+						  </span>
+					</div>
+					<div class="hot_pwd3">
+						<input type="text" placeholder="请输入手机号" name="tel" ng-model="tel" required />
+						<span style="color:red" ng-show="myForm.tel.$dirty && myForm.tel.$invalid">
+						  <span ng-show="myForm.tel.$error.required">手机号是必须的 。</span>
+						  </span>
+					</div>
+					<div class="hot_pwd4">
+						<input type="text" placeholder="请输入验证码" />
+						<h1>获取验证码</h1>
+					</div>
+					<div class="btn">
+						<button ng-disabled="myForm.user.$dirty && myForm.user.$invalid ||
+                         myForm.email.$dirty && myForm.pwd.$invalid">注册</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</body>
+	<script>
+		var app = angular.module('myApp', []);
+		app.controller('validateCtrl', function($scope) {
+			$scope.user = '1';
+			$scope.pwd = '2';
+			$scope.tel = '3';
+		});
+	</script>
+
+</html>

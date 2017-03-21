@@ -1,0 +1,63 @@
+@import "reset.css";
+html,
+body,
+.g {
+  width: 100%;
+  height: 100%;
+  background: none;
+}
+html {
+  font-size: 62.5%;
+}
+.wap .g {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.wap .g header {
+  width: 100%;
+  height: 3.5rem;
+  background: #f7f7f7;
+  position: relative;
+  font-size: 1.6rem;
+  text-align: center;
+  line-height: 3.5rem;
+  border-bottom: 1px solid #bfbfbf;
+}
+.wap .g header .h_back {
+  position: absolute;
+  left: 10px;
+}
+.wap .g header .h_back img {
+  width: 1rem;
+  height: auto;
+  background: none;
+}
+.wap .g section {
+  -webkit-box-flex: 1;
+  background: #f2f2f2;
+  overflow-x: hidden;
+}
+.wap .g section .g_list li {
+  width: 100%;
+  height: 4rem;
+  background: #ffffff;
+  line-height: 4rem;
+  padding-left: 1rem;
+  border-bottom: 1px solid #f2f2f2;
+}
+.wap .g section .g_list li:last-child {
+  border: none;
+}
+.wap .g section .g_btn {
+  padding: 15px 10px 0 10px;
+}
+.wap .g section .g_btn button {
+  width: 100%;
+  height: 4rem;
+  background: #cccccc;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: #FFFFFF;
+  font-size: 1.4rem;
+}

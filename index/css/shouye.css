@@ -1,0 +1,273 @@
+@import url("reset.css");
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "宋体";
+}
+.box {
+  width: 100%;
+  height: 100%;
+  background: none;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.box header {
+  width: 100%;
+  height: 4rem;
+  background: none;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  border-bottom: 1px solid #bfbfbf;
+}
+.box header .h_left {
+  width: auto;
+  height: 4rem;
+  background: none;
+}
+.box header .h_left img {
+  width: 1.5rem;
+  height: 1.5rem;
+  background: none;
+  padding: 15px;
+}
+.box header h1 {
+  -webkit-box-flex: 1;
+  line-height: 4rem;
+  font-size: 1.4rem;
+  text-align: center;
+}
+.box section {
+  -webkit-box-flex: 1;
+  overflow: hidden;
+}
+.box section div .big_box {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.box section div .big_box .one {
+  width: 100%;
+  height: 100%;
+  background: none;
+}
+.box section div .big_box .one .title {
+  width: 100%;
+  height: 8rem;
+  background: none;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  border-bottom: 1px solid #bfbfbf;
+}
+.box section div .big_box .one .title .t_left {
+  width: 8rem;
+  height: 8rem;
+  background: none;
+  text-align: center;
+}
+.box section div .big_box .one .title .t_left img {
+  width: 4rem;
+  height: 4rem;
+  background: none;
+  margin-top: 10px;
+}
+.box section div .big_box .one .title .t_center {
+  -webkit-box-flex: 1;
+}
+.box section div .big_box .one .title .t_center p {
+  margin-top: 1rem;
+}
+.box section div .big_box .one .title .t_center p span {
+  border-radius: 5px;
+  width: 5rem;
+  height: 1.5rem;
+  background: #ff4707;
+  display: inline-block;
+  color: white;
+  margin-left: 5px;
+  margin-top: 1rem;
+}
+.box section div .big_box .one .title .t_center p i {
+  color: #fd836b;
+}
+.box section div .big_box .one .title .t_right {
+  width: 4rem;
+  height: 6rem;
+  background: none;
+  text-align: center;
+  line-height: 8rem;
+}
+.box section div .big_box .one .title .t_right img {
+  width: 1rem;
+  height: 1.5rem;
+  background: none;
+}
+.box section div .big_box .one .start-work {
+  width: 100%;
+  height: 4.2rem;
+  background: none;
+}
+.box section div .big_box .one .start-work h2 {
+  -webkit-box-flex: 1;
+  text-align: center;
+  color: #ff7f1c;
+  font-size: 20px;
+  line-height: 4.2rem;
+}
+.box section div .big_box .one .start-work h2 span {
+  font-size: 1.8rem;
+}
+.box section div .big_box .one .s-content {
+  width: 100%;
+  height: 7rem;
+  background: none;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.box section div .big_box .one .s-content dl {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-flex: 1;
+}
+.box section div .big_box .one .s-content dl img {
+  width: 2.5rem;
+  height: 2.5rem;
+  background: none;
+  padding: 15px 5px;
+}
+.box section div .big_box .one .s-content dl dd {
+  margin-left: 1rem;
+}
+.box section div .big_box .one .s-content dl dd span {
+  font-size: 1.8rem;
+  color: #343434;
+}
+.box section div .big_box .one .s-content dl dd p {
+  color: #808080;
+  font-size: 1.6rem;
+}
+.box section div .big_box .one .s_info {
+  width: 100%;
+  height: 4rem;
+  background: none;
+  padding-left: 8px;
+}
+.box section div .big_box .one .s_info ul {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.box section div .big_box .one .s_info ul li {
+  -webkit-box-flex: 1;
+}
+.box section div .big_box .one .s_info ul li:nth-child(1) img {
+  width: 2rem;
+  height: 1.5rem;
+  background: none;
+  vertical-align: bottom;
+}
+.box section div .big_box .one .s_info ul li:nth-child(1) span {
+  font-size: 1.6rem;
+  margin: 0 8px ;
+}
+.box section div .big_box .one .s_info ul li:nth-child(2) img {
+  width: 1rem;
+  height: 1.5rem;
+  background: none;
+  float: right;
+  padding-right: 30px;
+}
+.box section div .big_box .one .s_info_list {
+  width: 100%;
+  height: 5rem;
+  background: none;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.box section div .big_box .one .s_info_list .s_i_l_left {
+  -webkit-box-flex: 1;
+}
+.box section div .big_box .one .s_info_list .s_i_l_left dl {
+  padding-left: 8px;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.box section div .big_box .one .s_info_list .s_i_l_left dl img {
+  width: 4rem;
+  height: 4rem;
+  background: none;
+}
+.box section div .big_box .one .s_info_list .s_i_l_left dl dd {
+  margin-left: 10px;
+  line-height: 22px;
+}
+.box section div .big_box .one .s_info_list .s_i_l_left dl dd p {
+  color: #9c9c9c;
+}
+.box section div .big_box .one .s_info_list .s_i_l_right {
+  width: 6rem;
+  height: 6rem;
+  background: none;
+  line-height: 3rem;
+}
+.box section div .big_box .one .s_info_list .s_i_l_right span {
+  color: #a3a3a3;
+}
+.box section div .two {
+  width: 100%;
+  height: 100%;
+  background: none;
+  font-size: 1.8rem;
+  color: orange;
+  font-weight: bold;
+}
+.box section div .three {
+  width: 100%;
+  height: 100%;
+  background: none;
+  font-size: 2rem;
+  color: seagreen;
+  font-weight: bold;
+}
+.box section div .four {
+  width: 100%;
+  height: 100%;
+  background: none;
+  font-size: 2.5rem;
+  color: darkcyan;
+  font-weight: bold;
+}
+.box section div .five {
+  width: 100%;
+  height: 100%;
+  background: none;
+  font-size: 3rem;
+  color: crimson;
+  font-weight: bold;
+}
+.box footer {
+  width: 100%;
+  height: 4rem;
+  background: none;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.box footer dl {
+  -webkit-box-flex: 1;
+  text-align: center;
+  color: #bfbfbf;
+}
+.box footer dl img {
+  width: 2rem;
+  height: 2rem;
+  background: none;
+}
+.box footer dl:nth-child(3) img {
+  width: 4rem;
+  height: 3.5rem;
+  background: none;
+}
+.box footer .active {
+  color: #ff7d1b;
+}

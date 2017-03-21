@@ -1,0 +1,518 @@
+@import "reset.css";
+.full(@w,@h,@b){
+  width: @w;
+  height: @h;
+  background: @b;
+}
+.box(@var){
+  display: -webkit-box;
+  -webkit-box-orient: @var;
+}
+html,body,.wap{
+  .full(100%,100%,none);
+}
+html{
+  font-size: 62.5%;
+}
+
+
+.wap{
+  .box(vertical);
+  section{
+    -webkit-box-flex: 1;
+    background-color: #f2f2f2;
+    overflow-y: auto;
+    &::-webkit-scrollbar{width: 0};
+
+    //绑定支付宝账号
+    .y_bd_main{
+      margin-top: 0.3rem;
+      .account{
+        .full(100%,3.2rem,#fff);
+        border-top: 0.2rem solid #e6e6e6;
+        line-height: 3rem;
+        .info{
+          margin-left: 1rem;
+          border-bottom: 0.2rem solid #e6e6e6;
+          p{
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #5b5b5b;
+            input{
+              border: none;
+              background:none;
+              outline:none;
+            }
+          }
+        }
+
+      }
+      .code{
+        .full(100%,3.2rem,#fff);
+        line-height: 3.2rem;
+        border-bottom: 0.2rem solid #e6e6e6;.box(horizontal);
+        .code_l{
+          -webkit-box-flex: 1;
+          font-size: 1.2rem;
+          font-weight: 500;
+          color: #5b5b5b;
+          margin-left: 1rem;
+          input{
+            border: none;
+            background:none;
+            outline:none;
+          }
+        }
+        .code_r{
+          span{
+            .full(7rem,100%,none);
+            display: inline-block;
+            border-left: 0.1rem solid #e6e6e6;
+            text-align: center;
+            color: #0e0e0d;
+          }
+        }
+      }
+      .info{
+        em{
+          line-height: 3rem;
+          -webkit-text-size-adjust: none;
+          font-size: 0.9rem;
+          color: #5b5b5b;
+          margin-left: 1rem;
+        }
+      }
+      .submit{
+        margin: 1rem;
+        button{
+          .full(100%,2.5rem,#ff7f1c);
+          border: none;
+          border-radius: 0.5rem;
+          font-size: 1.5rem;
+          font-weight: 800;
+          color: #fff;
+        }
+      }
+    }
+    //更多查询
+    .y_gd_main{
+      .gd_ban{
+        line-height: 3.4rem;
+        .uls{
+          .box(horizontal);
+          .full(100%,3.5rem,#fff);
+          li{
+            -webkit-box-flex: 1;
+            text-align: center;
+            border-right: 0.1rem solid #cccccc;
+            line-height: 3.5rem;
+            position: relative;
+            span{
+              display: inline-block;
+              width: 0;
+              height: 0;
+              border: 0.4rem solid transparent;
+              border-top: 0.4rem solid #999999;
+              margin-left: 0.3rem;
+            }
+            dl{
+              .full(100%,auto,#fff);
+              border: 0.1rem solid #d9d9d9;
+              dt{
+                height: 3rem;
+                border-bottom: 1rem solid #d9d9d9;
+              }
+            }
+          }
+          .active{
+            color: #ff7f1d;
+            border-bottom: 1rem solid #FF7F1D;
+            dl{
+              color: black;
+            }
+          }
+        }
+      }
+      .info{
+        .full(100%,3.6rem,#fff);
+        .box(horizontal);
+        margin-top: 0.5rem;
+        padding: 0 1rem;
+        box-sizing: border-box;
+        border-bottom: 0.1rem solid #f9f9f9;
+        ul{
+          -webkit-box-flex: 1;
+          line-height: 1.8rem;
+          h2{
+            text-align: right;
+            //float: right;
+          }
+          li{
+            span{
+              float: right;
+            }
+          }
+        }
+      }
+    }
+    //平台充值
+    .y_p_main{
+      .recharge{
+        margin-top: 0.5rem;
+        .full(100%,3.2rem,#fff);
+        line-height: 3.2rem;
+        border-bottom: 0.2rem solid #ebebeb;
+        border-top: 0.2rem solid #ebebeb;
+        p{
+          margin-left: 1rem;
+          font-weight: 500;
+          color: #7e7e7e;
+          input{
+            border: none;
+            background:none;
+            outline:none;
+          }
+        }
+
+      }
+      .submit{
+        margin: 1rem;
+        button{
+          .full(100%,2.5rem,#ff7f1c);
+          border: none;
+          border-radius: 0.5rem;
+          font-size: 1.5rem;
+          font-weight: 800;
+          color: #fff;
+        }
+      }
+    }
+    // 平台充值2
+    .y_pt_main{
+      .indent{
+        margin-top: 0.4rem;
+        .full(100%,6.5rem,#fff);
+        p{
+          line-height: 2.1rem;
+          margin-left: 1rem;
+          margin-top: 0.3rem;
+          box-sizing: border-box;
+          color: #5e5e5e;
+          b{
+            color: #ff7d1e;
+          }
+        }
+      }
+      .pay{
+        margin-top: 0.5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        background-color: #fff;
+        p{
+          line-height: 3.5rem;
+          color: #898989;
+        }
+        .alipay,.WeChat{
+          .box(horizontal);
+          line-height: 3.5rem;
+          color: #2d2d2d;
+          font-weight: 600;
+          .left{
+            -webkit-box-flex: 1;
+            img{
+              margin-right: 1rem;
+            }
+          }
+          .right{
+            .full(2.2rem,2.2rem,none);
+          }
+          img{
+            vertical-align: middle;
+
+          }
+        }
+      }
+      .submit{
+        margin: 1rem;
+        button{
+          .full(100%,2.5rem,#ff7f1c);
+          border: none;
+          border-radius: 0.5rem;
+          font-size: 1.5rem;
+          font-weight: 800;
+          color: #fff;
+        }
+      }
+    }
+     //  业务明细
+    .y_yw_main{
+      .box(vertical);
+      h4{
+        margin-top: 0.4rem;
+        line-height: 2.6rem;
+        .full(100%,2.6rem,#fff);
+        border-bottom: 0.1rem solid #f9f9f9;
+        b{
+           padding-left: 1rem;
+          box-sizing: border-box;
+          .full(8rem,100%,none);
+          font-weight: 900;
+        }
+        em{
+         float: right;
+          padding-right: 1rem;
+          box-sizing: border-box;
+          color: #b8b8b8;
+        }
+      }
+
+      .yd_info{
+        .info_on{
+          .box(horizontal);
+          .full(100%,2.5rem,#fff);
+          line-height: 2.5rem;
+          color: #b8b8b8;
+          .y_left{
+            .full(5rem,100%,none);
+            font-size: 1.3rem;
+            font-weight: 800;
+            padding-left: 1rem;
+          }
+          .y_right{
+            -webkit-box-flex: 1;
+            text-align: right;
+            padding-right: 0.9rem;
+            box-sizing: border-box;
+          }
+        }
+      }
+
+    }
+      // 提现申请
+    .y_t_main{
+      .extract{
+        p{
+          line-height: 2.8rem;
+          padding-left: 1rem;
+          color: #c3c3c3;
+        }
+      }
+      .recharge{
+        margin-top: 0.5rem;
+        .full(100%,3.2rem,#fff);
+        line-height: 3.2rem;
+        border-bottom: 0.2rem solid #ebebeb;
+        border-top: 0.2rem solid #ebebeb;
+        p{
+          margin-left: 1rem;
+          font-weight: 500;
+          color: #4f4f4f;
+          input{
+            border: none;
+            background:none;
+            outline:none;
+          }
+        }
+
+      }
+      .submit{
+        margin: 1rem;
+        button{
+          .full(100%,2.5rem,#ff7f1c);
+          border: none;
+          border-radius: 0.5rem;
+          font-size: 1.5rem;
+          font-weight: 800;
+          color: #fff;
+        }
+      }
+    }
+    //我的钱包  优橙钱包
+    .y_wd_main{
+      .account{
+       .full(100%,17rem,#fff);
+       .box(vertical);
+       .account_tit{
+         line-height: 3.5rem;
+         .box(horizontal);
+         .tit_l{
+           -webkit-box-flex: 1;
+         }
+         .tit_r{
+           .full(10rem,3.5rem,none);
+           text-align: center;
+           input{
+             background: none;
+             outline: none;
+             border: 0.2rem solid #feb072;
+             padding: 0.2rem 0.5rem;
+             color: #feb072;
+             border-radius: 0.5rem;
+           }
+         }
+       }
+        h3{
+          line-height: 2.8rem;
+          font-size: 1.6rem;
+          text-align: center;
+        }
+        h4{
+          line-height: 2rem;
+          color: #ff7f1c;
+          text-align: center;
+        }
+        h5{
+          line-height: 2rem;
+          text-align: center;
+        }
+       p{
+         line-height: 2rem;
+         font-size: 0.8rem;
+         -webkit-text-size-adjust: none;
+         text-align: center;
+         i{
+           color: #feb072;
+         }
+       }
+       .y_select{
+         .box(horizontal);
+         //.full(100%,4.5rem,none);
+         text-align: center;
+         margin-top: 1.2rem;
+         .recharge{
+           -webkit-box-flex: 1;
+           span{
+             display: inline-block;
+             background-color: #ff7f1c;
+             padding: 0.8rem 2rem;
+             color: white;
+             border-radius: 1rem;
+             margin-left: 1rem;
+           }
+         }
+         .draw{
+           -webkit-box-flex: 1;
+           span{
+             display: inline-block;
+             background-color: #fff;
+             border: 0.1rem solid #e6e6e6;
+             padding: 0.8rem 2rem;
+             color: #ff7f1c;
+             border-radius: 1rem;
+             margin-right: 1rem;
+           }
+         }
+       }
+      }
+      .amend{
+        margin-top: 0.3rem;
+        line-height: 2.7rem;
+        .full(100%,2.7rem,#fff);
+        p{
+          line-height: 2.6rem;
+          font-weight: 600;
+          img{
+            margin-left: 0.9rem;
+            margin-right: 0.6rem;
+            vertical-align: middle;
+            .full(auto,1rem,none);
+          }
+          span{
+            float: right;
+            margin-right: 1rem;
+          }
+        }
+      }
+      .cash{
+        margin-top: 0.3rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        box-sizing: border-box;
+        background-color: #fff;
+        h3{
+          line-height: 2.4rem;
+          font-weight: 600;
+        }
+
+      }
+      .info{
+        .full(100%,3.6rem,#fff);
+        .box(horizontal);
+        padding: 0 1rem;
+        box-sizing: border-box;
+        border-bottom: 0.1rem solid #f9f9f9;
+        ul{
+         -webkit-box-flex: 1;
+          line-height: 1.8rem;
+          h2{
+            text-align: right;
+            //float: right;
+          }
+          li{
+            span{
+              float: right;
+            }
+          }
+        }
+       }
+    }
+
+    //更多查询
+    .y_g_s_main{
+      .uls{
+        .box(horizontal);
+        .full(100%,3.5rem,#fff);
+        li{
+          -webkit-box-flex: 1;
+          text-align: center;
+          border-right: 0.1rem solid #cccccc;
+          line-height: 3.5rem;
+          position: relative;
+          span{
+            display: inline-block;
+            width: 0;
+            height: 0;
+            border: 0.4rem solid transparent;
+            border-top: 0.4rem solid #999999;
+            margin-left: 0.3rem;
+          }
+          dl{
+            .full(100%,auto,#fff);
+            border: 0.1rem solid #d9d9d9;
+            dt{
+              height: 3rem;
+              border-bottom: 0.1rem solid #d9d9d9;
+            }
+          }
+        }
+        .active{
+          color: #ff7f1d;
+          border-bottom: 0.1rem solid #FF7F1D;
+          dl{
+            color: black;
+          }
+        }
+      }
+      .sales{
+        margin-top: 0.8rem;
+        .full(100%,5rem,#fff);
+        padding: 0 0.8rem;
+        box-sizing: border-box;
+        .div1{
+          padding: 0.5rem 0;
+          box-sizing: border-box;
+        }
+        .p1{
+          float: left;
+          span{
+            color: #888bc6;
+          }
+        }
+        .p2{
+          float: right;
+        }
+      }
+    }
+
+  }
+}

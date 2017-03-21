@@ -1,0 +1,150 @@
+@import "reset.css";
+
+.full(@w,@h,@bg){
+        width: @w;
+        height: @h;
+        background: @bg;
+}
+
+.box(@ver:vertical){
+        display: -webkit-box;
+        -webkit-box-orient: @ver;
+}
+
+html,body , .youchen{
+        .full(100%,100%,none);
+}
+
+html{
+    font-size: 62.5%;
+}
+
+
+
+.wap{
+    .youchen{
+        .box;
+        header{
+            .full(100%,3.5rem,#f7f7f7);
+            .box(horizontal);
+            padding: 0 1rem;
+            text-align: center;
+            line-height: 3.5rem;
+            font-size: 1.8rem;
+            font-weight: bold;
+            .h_title{-webkit-box-flex: 1;}
+            .h_left{
+                img{
+                    width: 1rem;
+                }
+            }
+            .h_right{
+                img{
+                    width: 1.8rem;
+                }
+            }
+        }
+        section{
+            -webkit-box-flex: 1;
+            background: #f2f2f2;
+            //overflow-y: auto;
+            overflow-x: hidden;
+            &&::-webkit-scrollbar{width: 0;}
+            overflow-y: auto;
+            &::-webkit-scrollbar{width: 0};
+            .notice{
+                .full(100%,2.1rem,none);
+                line-height: 2.1rem;
+                padding-left: 1rem;
+                span{
+                    color: #ff7d1b;
+                }
+            }
+            .works_main{
+                width: 100%;
+                background: #FFFFFF;
+                padding-left: 1rem;
+                padding-bottom: 1rem;
+                .works_uls{
+                    li{
+                        width: 100%;
+                        min-height: 3.5rem;
+                        border-bottom: 1px solid #e6e6e6;
+                        padding-top: 1.2rem;
+                        padding-bottom: 1rem;
+                        padding-right: 1rem;
+                        .box(horizontal);
+                        .txt{
+                            -webkit-box-flex: 1;                           
+                            white-space: pre-wrap;
+                        }
+                        img{.full(0.6rem,auto,none);}
+                        input{
+                            .full(100%,auto,none);
+                            border: none;
+                            outline: none;
+                            white-space: pre-wrap;
+                        }
+                    }
+                }
+                
+                .works_pic{
+                    p{
+                        margin-top: 1rem;
+                        margin-bottom: 2.1rem;
+                    }
+                    ul{
+                        .box(horizontal);
+                        li{
+                            margin-right: 1.5rem;
+                        }
+                        img{
+                            width: 7rem;
+                        }
+                    }
+                }
+            }
+            .works_site{
+                .full(100%,5.3rem,#FFFFFF);
+                margin-top: 0.5rem;
+                .box(horizontal);
+                padding: 0 1rem;
+                .addres{
+                    -webkit-box-flex: 1;
+                    li{
+                        .box(horizontal);
+                        margin-top: 8px;
+                        img{
+                            .full(1.2rem,auto,none);
+                            margin-right:10px ;
+                        }
+                    }
+                }
+                .img{
+                    line-height: 5.3rem;
+                    img{.full(0.6rem,auto,none);}
+                }
+            }
+        }
+        footer{
+            .full(100%,4.2rem,#ffffff);
+            .box(horizontal);
+            padding: 0 0 0 1rem;
+            //font-size: 1.4rem;
+            line-height: 4.2rem;
+            p{
+                -webkit-box-flex: 1;
+                span{
+                    color: #ff7d1b;
+                }
+            }
+            button{
+                .full(10rem,4.2rem,#ff7d1b);
+                border: none;
+                font-size: 1.6rem;
+                color: #FFFFFF;
+                outline: none;
+            }
+        }
+    }
+}

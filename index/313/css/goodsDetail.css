@@ -1,0 +1,170 @@
+@import url("reset.css");
+.DETAIL-containter,
+body,
+html {
+  width: 100%;
+  height: 100%;
+  background: none;
+}
+html {
+  font-size: 62.5%;
+}
+.DETAIL-containter {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.DETAIL-containter header {
+  width: 100%;
+  height: 3.5rem;
+  background: #f7f7f7;
+  border-bottom: 0.1rem solid #d9d9d9;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  line-height: 3.5rem;
+}
+.DETAIL-containter header .head-left img {
+  width: auto;
+  height: 1.7rem;
+  background: none;
+}
+.DETAIL-containter header .head-center {
+  font-size: 1.8rem;
+  -webkit-box-flex: 1;
+  text-align: center;
+}
+.DETAIL-containter header .head-right img {
+  width: auto;
+  height: 1.8rem;
+  background: none;
+}
+.DETAIL-containter section {
+  overflow-y: auto;
+  -webkit-box-flex: 1;
+}
+.DETAIL-containter section::-webkit-scrollbar {
+  width: 0;
+}
+.DETAIL-containter section .SHELL-main-box1 {
+  width: 100%;
+  height: 9.7rem;
+  background: none;
+  border-bottom: 1rem solid #f7f7f7;
+  padding: 1rem;
+  box-sizing: border-box;
+  font-size: 1.2rem;
+}
+.DETAIL-containter section .SHELL-main-box1 .SM-red {
+  color: #fda671;
+}
+.DETAIL-containter section .SHELL-main-box2 {
+  font-size: 1.2rem;
+  width: 100%;
+  height: auto;
+  background: none;
+}
+.DETAIL-containter section .SHELL-main-box2 h1 {
+  padding: 0 1rem;
+  box-sizing: border-box;
+  width: 100%;
+  height: 3rem;
+  background: none;
+  font-size: 1.4rem;
+  line-height: 3rem;
+  border-bottom: 0.1rem solid #f7f7f7;
+}
+.DETAIL-containter section .SHELL-main-box2 dl {
+  width: 100%;
+  height: auto;
+  background: none;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  padding: 1rem;
+  box-sizing: border-box;
+  border-bottom: 0.1rem solid #f2f2f2;
+}
+.DETAIL-containter section .SHELL-main-box2 dl dt img {
+  width: auto;
+  height: 7.4rem;
+  background: none;
+}
+.DETAIL-containter section .SHELL-main-box2 dl dd {
+  -webkit-box-flex: 1;
+  padding-left: 1rem;
+  box-sizing: border-box;
+  color: #262626;
+}
+.DETAIL-containter section .SHELL-main-box2 dl dd .dd-content {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.DETAIL-containter section .SHELL-main-box2 dl dd .dd-content .dd-left {
+  padding-top: 0.7rem;
+  box-sizing: border-box;
+  -webkit-box-flex: 1;
+  color: #666666;
+}
+.DETAIL-containter section .SHELL-main-box2 dl dd .dd-content .dd-right {
+  padding-top: 0.5rem;
+  box-sizing: border-box;
+}
+.DETAIL-containter section .SHELL-main-box2 dl dd .dd-content .dd-right span {
+  display: block;
+  line-height: 1.2rem;
+}
+.DETAIL-containter section .SHELL-main-box2 .SHELL-main-box2-bottom {
+  font-size: 1.2rem;
+  width: 100%;
+  height: 3rem;
+  background: none;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  text-align: right;
+  line-height: 3rem;
+}
+.DETAIL-containter section .SHELL-main-box2 .SHELL-main-box2-bottom span {
+  margin-right: 0.3rem;
+  line-height: 3rem;
+}
+.DETAIL-containter section .SHELL-main-box2 .SHELL-main-box2-bottom .total-red {
+  color: #fe7e1d;
+}
+.DETAIL-containter section .SHELL-main-box2 .SHELL-main-box2-bottom2 {
+  border-top: 0.1rem solid #f2f2f2;
+  width: 100%;
+  height: 3rem;
+  background: none;
+  padding: 0.5rem 1rem 0;
+  box-sizing: border-box;
+  text-align: right;
+  color: #ffa570;
+}
+.DETAIL-containter section .SHELL-main-box2 .SHELL-main-box2-bottom2 span {
+  width: 6rem;
+  height: 2rem;
+  background: none;
+  display: inline-block;
+  border: 0.1rem solid #ffa570;
+  line-height: 2rem;
+  text-align: center;
+  border-radius: 0.4rem;
+}
+.DETAIL-containter section .SHELL-main-box2 .SHELL-main-box2-bottom2 span .fagoods {
+  padding-left: 1rem;
+  box-sizing: border-box;
+}
+.DETAIL-containter section .SHELL-main-box2 .SHELL2-main-box2-express {
+  font-size: 1.2rem;
+  border-top: 0.1rem solid #f2f2f2;
+  width: 100%;
+  height: 3rem;
+  background: none;
+  line-height: 3rem;
+  text-align: right;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+.DETAIL-containter section .SHELL-main-box2 .SHELL2-main-box2-express span > b {
+  margin-left: 1rem;
+}

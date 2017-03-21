@@ -1,0 +1,51 @@
+@import "reset.css";
+.full(@w,@h,@b){
+  width: @w;
+  height: @h;
+  background: @b;
+}
+.box(@var){
+  display: -webkit-box;
+  -webkit-box-orient: @var;
+}
+html,body,.wap{
+  .full(100%,100%,none);
+}
+html{
+  font-size: 62.5%;
+}
+.wap {
+
+  section {
+    -webkit-box-flex: 1;
+    overflow-y: auto;
+    &::-webkit-scrollbar{ width: 0};
+    background-color: #f2f2f2;
+    .y_gd_main{
+      .as{
+
+      }
+      .info{
+        background-color: #fff;
+        padding:  0 1rem;
+        box-sizing: border-box;
+        line-height: 3.5rem;
+        b{
+          font-weight: 600;
+        }
+
+        span{
+          float: right;
+          img{
+            vertical-align: middle;
+            width: 0.8rem;
+          }
+        }
+      }
+      .opinion{
+          margin-top: 0.8rem;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,131 @@
+@import "reset.css";
+html,
+body,
+.upda {
+  width: 100%;
+  height: 100%;
+  background: none;
+}
+html {
+  font-size: 62.5%;
+}
+.wap .upda {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.wap .upda header {
+  width: 100%;
+  height: 3.5rem;
+  background: #f7f7f7;
+  position: relative;
+  font-size: 1.6rem;
+  text-align: center;
+  line-height: 3.5rem;
+  border-bottom: 1px solid #bfbfbf;
+}
+.wap .upda header .h_back {
+  position: absolute;
+  left: 10px;
+}
+.wap .upda header .h_back img {
+  width: 1rem;
+  height: auto;
+  background: none;
+}
+.wap .upda section {
+  -webkit-box-flex: 1;
+  background: #f2f2f2;
+  overflow-y: auto;
+}
+.wap .upda section::-webkit-scrollbar {
+  width: 0;
+}
+.wap .upda section .uls_p li {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 100%;
+  height: 3rem;
+  background: #f7f7f7;
+  padding: 0 1rem;
+  line-height: 3rem;
+  border-bottom: 1px solid #f2f2f2;
+}
+.wap .upda section .uls_p li .txt {
+  -webkit-box-flex: 1;
+  color: #a6a6a6;
+}
+.wap .upda section .uls_p li .txt input {
+  width: 100%;
+  height: 3rem;
+  background: none;
+  border: none;
+  outline: none;
+}
+.wap .upda section .uls_p li .back img {
+  width: 0.6rem;
+  height: auto;
+  background: none;
+}
+.wap .upda section .up_btn {
+  padding: 0 1rem;
+}
+.wap .upda section .up_btn button {
+  width: 100%;
+  height: 4rem;
+  background: #ff7f1d;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 1.8rem;
+  margin-top: 30px;
+}
+.ball {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  opacity: 0.4;
+  display: none;
+}
+.ball_cont {
+  position: absolute;
+  display: none;
+  left: 15%;
+  top: 15rem;
+  width: 70%;
+  height: 11.5rem;
+  background: #ffffff;
+  border-radius: 0.5rem ;
+}
+.ball_cont .conment {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.ball_cont .conment h3 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.ball_cont .btn {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  border-top: 1px solid #e1e1e3;
+}
+.ball_cont .btn p {
+  text-align: center;
+  -webkit-box-flex: 1;
+  border-right: 1px solid #e1e1e3;
+  line-height: 3.5rem;
+}
+.ball_cont .btn p:last-child {
+  border: none;
+}
+.ball_cont .btn p a {
+  color: #1583fe;
+  font-size: 1.4rem;
+}

@@ -1,0 +1,62 @@
+@import "reset.css";
+.full(@w,@h,@b){
+  width: @w;
+  height: @h;
+  background: @b;
+}
+.box(@var){
+  display: -webkit-box;
+  -webkit-box-orient: @var;
+}
+html,body,.wap{
+  .full(100%,100%,none);
+}
+html{
+  font-size: 62.5%;
+}
+.wap{
+  section{
+    -webkit-box-flex: 1;
+    overflow-y: auto;
+    &::-webkit-scrollbar{width: 0};
+    .box(vertical);
+    background-color: #f2f2f2;
+
+    .y_zp_main{
+      .info{
+        .full(100%,3.5rem,#fff);
+        margin-top: 0.1rem;
+        p{
+          margin: 0 1rem;
+          font-weight: 600;
+          span{
+            display: inline-block;
+            float: right;
+            img{
+              width: 1.4rem;
+            }
+          }
+        }
+        line-height: 3.5rem;
+      }
+      .hint{
+        margin: 1.6rem 1rem;
+        p{
+          line-height: 1.5rem;
+          color: #a4a4a4;
+        }
+      }
+      .uploading{
+        margin: 0 1rem;
+        button{
+          .full(100%,2.5rem,#ff7f1c);
+          line-height: 2.5rem;
+          border: none;
+          font-size: 1.6rem;
+          color: #fff;
+        }
+      }
+
+    }
+  }
+}

@@ -1,0 +1,538 @@
+@import "reset.css";
+html,
+body,
+.wap {
+  width: 100%;
+  height: 100%;
+  background: none;
+}
+html {
+  font-size: 62.5%;
+}
+.wap {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.wap section {
+  -webkit-box-flex: 1;
+  background-color: #f2f2f2;
+  overflow-y: auto;
+}
+.wap section::-webkit-scrollbar {
+  width: 0;
+}
+.wap section .y_bd_main {
+  margin-top: 0.3rem;
+}
+.wap section .y_bd_main .account {
+  width: 100%;
+  height: 3.2rem;
+  background: #ffffff;
+  border-top: 0.2rem solid #e6e6e6;
+  line-height: 3rem;
+}
+.wap section .y_bd_main .account .info {
+  margin-left: 1rem;
+  border-bottom: 0.2rem solid #e6e6e6;
+}
+.wap section .y_bd_main .account .info p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #5b5b5b;
+}
+.wap section .y_bd_main .account .info p input {
+  border: none;
+  background: none;
+  outline: none;
+}
+.wap section .y_bd_main .code {
+  width: 100%;
+  height: 3.2rem;
+  background: #ffffff;
+  line-height: 3.2rem;
+  border-bottom: 0.2rem solid #e6e6e6;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.wap section .y_bd_main .code .code_l {
+  -webkit-box-flex: 1;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #5b5b5b;
+  margin-left: 1rem;
+}
+.wap section .y_bd_main .code .code_l input {
+  border: none;
+  background: none;
+  outline: none;
+}
+.wap section .y_bd_main .code .code_r span {
+  width: 7rem;
+  height: 100%;
+  background: none;
+  display: inline-block;
+  border-left: 0.1rem solid #e6e6e6;
+  text-align: center;
+  color: #0e0e0d;
+}
+.wap section .y_bd_main .info em {
+  line-height: 3rem;
+  -webkit-text-size-adjust: none;
+  font-size: 0.9rem;
+  color: #5b5b5b;
+  margin-left: 1rem;
+}
+.wap section .y_bd_main .submit {
+  margin: 1rem;
+}
+.wap section .y_bd_main .submit button {
+  width: 100%;
+  height: 2.5rem;
+  background: #ff7f1c;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #fff;
+}
+.wap section .y_gd_main .gd_ban {
+  line-height: 3.4rem;
+}
+.wap section .y_gd_main .gd_ban .uls {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 100%;
+  height: 3.5rem;
+  background: #ffffff;
+}
+.wap section .y_gd_main .gd_ban .uls li {
+  -webkit-box-flex: 1;
+  text-align: center;
+  border-right: 0.1rem solid #cccccc;
+  line-height: 3.5rem;
+  position: relative;
+}
+.wap section .y_gd_main .gd_ban .uls li span {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border: 0.4rem solid transparent;
+  border-top: 0.4rem solid #999999;
+  margin-left: 0.3rem;
+}
+.wap section .y_gd_main .gd_ban .uls li dl {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  border: 0.1rem solid #d9d9d9;
+}
+.wap section .y_gd_main .gd_ban .uls li dl dt {
+  height: 3rem;
+  border-bottom: 1rem solid #d9d9d9;
+}
+.wap section .y_gd_main .gd_ban .uls .active {
+  color: #ff7f1d;
+  border-bottom: 1rem solid #FF7F1D;
+}
+.wap section .y_gd_main .gd_ban .uls .active dl {
+  color: black;
+}
+.wap section .y_gd_main .info {
+  width: 100%;
+  height: 3.6rem;
+  background: #ffffff;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  margin-top: 0.5rem;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  border-bottom: 0.1rem solid #f9f9f9;
+}
+.wap section .y_gd_main .info ul {
+  -webkit-box-flex: 1;
+  line-height: 1.8rem;
+}
+.wap section .y_gd_main .info ul h2 {
+  text-align: right;
+}
+.wap section .y_gd_main .info ul li span {
+  float: right;
+}
+.wap section .y_p_main .recharge {
+  margin-top: 0.5rem;
+  width: 100%;
+  height: 3.2rem;
+  background: #ffffff;
+  line-height: 3.2rem;
+  border-bottom: 0.2rem solid #ebebeb;
+  border-top: 0.2rem solid #ebebeb;
+}
+.wap section .y_p_main .recharge p {
+  margin-left: 1rem;
+  font-weight: 500;
+  color: #7e7e7e;
+}
+.wap section .y_p_main .recharge p input {
+  border: none;
+  background: none;
+  outline: none;
+}
+.wap section .y_p_main .submit {
+  margin: 1rem;
+}
+.wap section .y_p_main .submit button {
+  width: 100%;
+  height: 2.5rem;
+  background: #ff7f1c;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #fff;
+}
+.wap section .y_pt_main .indent {
+  margin-top: 0.4rem;
+  width: 100%;
+  height: 6.5rem;
+  background: #ffffff;
+}
+.wap section .y_pt_main .indent p {
+  line-height: 2.1rem;
+  margin-left: 1rem;
+  margin-top: 0.3rem;
+  box-sizing: border-box;
+  color: #5e5e5e;
+}
+.wap section .y_pt_main .indent p b {
+  color: #ff7d1e;
+}
+.wap section .y_pt_main .pay {
+  margin-top: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: #fff;
+}
+.wap section .y_pt_main .pay p {
+  line-height: 3.5rem;
+  color: #898989;
+}
+.wap section .y_pt_main .pay .alipay,
+.wap section .y_pt_main .pay .WeChat {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  line-height: 3.5rem;
+  color: #2d2d2d;
+  font-weight: 600;
+}
+.wap section .y_pt_main .pay .alipay .left,
+.wap section .y_pt_main .pay .WeChat .left {
+  -webkit-box-flex: 1;
+}
+.wap section .y_pt_main .pay .alipay .left img,
+.wap section .y_pt_main .pay .WeChat .left img {
+  margin-right: 1rem;
+}
+.wap section .y_pt_main .pay .alipay .right,
+.wap section .y_pt_main .pay .WeChat .right {
+  width: 2.2rem;
+  height: 2.2rem;
+  background: none;
+}
+.wap section .y_pt_main .pay .alipay img,
+.wap section .y_pt_main .pay .WeChat img {
+  vertical-align: middle;
+}
+.wap section .y_pt_main .submit {
+  margin: 1rem;
+}
+.wap section .y_pt_main .submit button {
+  width: 100%;
+  height: 2.5rem;
+  background: #ff7f1c;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #fff;
+}
+.wap section .y_yw_main {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.wap section .y_yw_main h4 {
+  margin-top: 0.4rem;
+  line-height: 2.6rem;
+  width: 100%;
+  height: 2.6rem;
+  background: #ffffff;
+  border-bottom: 0.1rem solid #f9f9f9;
+}
+.wap section .y_yw_main h4 b {
+  padding-left: 1rem;
+  box-sizing: border-box;
+  width: 8rem;
+  height: 100%;
+  background: none;
+  font-weight: 900;
+}
+.wap section .y_yw_main h4 em {
+  float: right;
+  padding-right: 1rem;
+  box-sizing: border-box;
+  color: #b8b8b8;
+}
+.wap section .y_yw_main .yd_info .info_on {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 100%;
+  height: 2.5rem;
+  background: #ffffff;
+  line-height: 2.5rem;
+  color: #b8b8b8;
+}
+.wap section .y_yw_main .yd_info .info_on .y_left {
+  width: 5rem;
+  height: 100%;
+  background: none;
+  font-size: 1.3rem;
+  font-weight: 800;
+  padding-left: 1rem;
+}
+.wap section .y_yw_main .yd_info .info_on .y_right {
+  -webkit-box-flex: 1;
+  text-align: right;
+  padding-right: 0.9rem;
+  box-sizing: border-box;
+}
+.wap section .y_t_main .extract p {
+  line-height: 2.8rem;
+  padding-left: 1rem;
+  color: #c3c3c3;
+}
+.wap section .y_t_main .recharge {
+  margin-top: 0.5rem;
+  width: 100%;
+  height: 3.2rem;
+  background: #ffffff;
+  line-height: 3.2rem;
+  border-bottom: 0.2rem solid #ebebeb;
+  border-top: 0.2rem solid #ebebeb;
+}
+.wap section .y_t_main .recharge p {
+  margin-left: 1rem;
+  font-weight: 500;
+  color: #4f4f4f;
+}
+.wap section .y_t_main .recharge p input {
+  border: none;
+  background: none;
+  outline: none;
+}
+.wap section .y_t_main .submit {
+  margin: 1rem;
+}
+.wap section .y_t_main .submit button {
+  width: 100%;
+  height: 2.5rem;
+  background: #ff7f1c;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #fff;
+}
+.wap section .y_wd_main .account {
+  width: 100%;
+  height: 17rem;
+  background: #ffffff;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.wap section .y_wd_main .account .account_tit {
+  line-height: 3.5rem;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.wap section .y_wd_main .account .account_tit .tit_l {
+  -webkit-box-flex: 1;
+}
+.wap section .y_wd_main .account .account_tit .tit_r {
+  width: 10rem;
+  height: 3.5rem;
+  background: none;
+  text-align: center;
+}
+.wap section .y_wd_main .account .account_tit .tit_r input {
+  background: none;
+  outline: none;
+  border: 0.2rem solid #feb072;
+  padding: 0.2rem 0.5rem;
+  color: #feb072;
+  border-radius: 0.5rem;
+}
+.wap section .y_wd_main .account h3 {
+  line-height: 2.8rem;
+  font-size: 1.6rem;
+  text-align: center;
+}
+.wap section .y_wd_main .account h4 {
+  line-height: 2rem;
+  color: #ff7f1c;
+  text-align: center;
+}
+.wap section .y_wd_main .account h5 {
+  line-height: 2rem;
+  text-align: center;
+}
+.wap section .y_wd_main .account p {
+  line-height: 2rem;
+  font-size: 0.8rem;
+  -webkit-text-size-adjust: none;
+  text-align: center;
+}
+.wap section .y_wd_main .account p i {
+  color: #feb072;
+}
+.wap section .y_wd_main .account .y_select {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  text-align: center;
+  margin-top: 1.2rem;
+}
+.wap section .y_wd_main .account .y_select .recharge {
+  -webkit-box-flex: 1;
+}
+.wap section .y_wd_main .account .y_select .recharge span {
+  display: inline-block;
+  background-color: #ff7f1c;
+  padding: 0.8rem 2rem;
+  color: white;
+  border-radius: 1rem;
+  margin-left: 1rem;
+}
+.wap section .y_wd_main .account .y_select .draw {
+  -webkit-box-flex: 1;
+}
+.wap section .y_wd_main .account .y_select .draw span {
+  display: inline-block;
+  background-color: #fff;
+  border: 0.1rem solid #e6e6e6;
+  padding: 0.8rem 2rem;
+  color: #ff7f1c;
+  border-radius: 1rem;
+  margin-right: 1rem;
+}
+.wap section .y_wd_main .amend {
+  margin-top: 0.3rem;
+  line-height: 2.7rem;
+  width: 100%;
+  height: 2.7rem;
+  background: #ffffff;
+}
+.wap section .y_wd_main .amend p {
+  line-height: 2.6rem;
+  font-weight: 600;
+}
+.wap section .y_wd_main .amend p img {
+  margin-left: 0.9rem;
+  margin-right: 0.6rem;
+  vertical-align: middle;
+  width: auto;
+  height: 1rem;
+  background: none;
+}
+.wap section .y_wd_main .amend p span {
+  float: right;
+  margin-right: 1rem;
+}
+.wap section .y_wd_main .cash {
+  margin-top: 0.3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+.wap section .y_wd_main .cash h3 {
+  line-height: 2.4rem;
+  font-weight: 600;
+}
+.wap section .y_wd_main .info {
+  width: 100%;
+  height: 3.6rem;
+  background: #ffffff;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  border-bottom: 0.1rem solid #f9f9f9;
+}
+.wap section .y_wd_main .info ul {
+  -webkit-box-flex: 1;
+  line-height: 1.8rem;
+}
+.wap section .y_wd_main .info ul h2 {
+  text-align: right;
+}
+.wap section .y_wd_main .info ul li span {
+  float: right;
+}
+.wap section .y_g_s_main .uls {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 100%;
+  height: 3.5rem;
+  background: #ffffff;
+}
+.wap section .y_g_s_main .uls li {
+  -webkit-box-flex: 1;
+  text-align: center;
+  border-right: 0.1rem solid #cccccc;
+  line-height: 3.5rem;
+  position: relative;
+}
+.wap section .y_g_s_main .uls li span {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border: 0.4rem solid transparent;
+  border-top: 0.4rem solid #999999;
+  margin-left: 0.3rem;
+}
+.wap section .y_g_s_main .uls li dl {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  border: 0.1rem solid #d9d9d9;
+}
+.wap section .y_g_s_main .uls li dl dt {
+  height: 3rem;
+  border-bottom: 0.1rem solid #d9d9d9;
+}
+.wap section .y_g_s_main .uls .active {
+  color: #ff7f1d;
+  border-bottom: 0.1rem solid #FF7F1D;
+}
+.wap section .y_g_s_main .uls .active dl {
+  color: black;
+}
+.wap section .y_g_s_main .sales {
+  margin-top: 0.8rem;
+  width: 100%;
+  height: 5rem;
+  background: #ffffff;
+  padding: 0 0.8rem;
+  box-sizing: border-box;
+}
+.wap section .y_g_s_main .sales .div1 {
+  padding: 0.5rem 0;
+  box-sizing: border-box;
+}
+.wap section .y_g_s_main .sales .p1 {
+  float: left;
+}
+.wap section .y_g_s_main .sales .p1 span {
+  color: #888bc6;
+}
+.wap section .y_g_s_main .sales .p2 {
+  float: right;
+}

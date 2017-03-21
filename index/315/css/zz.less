@@ -1,0 +1,77 @@
+@import "reset.css";
+.full(@w,@h,@b){
+  width: @w;
+  height: @h;
+  background: @b;
+}
+.box(@var){
+  display: -webkit-box;
+  -webkit-box-orient: @var;
+}
+html,body,.wap{
+  .full(100%,100%,none);
+}
+html{
+  font-size: 62.5%;
+}
+.zz{
+  .full(100%,100%,#737373);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0.4;
+}
+.zz_con{
+  .full(100%,13rem,none);
+  padding: 0 3.5rem;
+  position: absolute;
+  left: 0;
+  bottom: 1rem;
+  box-sizing: border-box;
+  display: none;
+  .conment{
+    h3{
+      text-align: center;
+      line-height: 2.3rem;
+      .full(100%,2.3rem,#fff);
+      border-radius: 0.5rem;
+      margin: 0.3rem 0;
+      //margin-bottom: 1rem;
+    }
+  }
+}
+.qy{
+  .full(100%,100%,#737373);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0.4;
+}
+.qy_con{
+  .full(100%,10rem,none);
+  padding: 0 3.5rem;
+  position: absolute;
+  left: 0;
+  top: 13rem;
+  box-sizing: border-box;
+  border-radius: 0.5rem;
+  display: none;
+  .info{
+    h3{
+      text-align: center;
+      line-height: 5rem;
+      .full(100%,5rem,#fff);
+
+    }
+    span{
+      .full(100%,3rem,#fff);
+      text-align: center;
+      display: inline-block;
+      color: #3f97fe;
+    }
+  }
+}
+
+

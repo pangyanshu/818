@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    	<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/update.css"/>
+	</head>
+	<body class="wap">
+		<div class="upda">
+			<header>
+				<div class="h_back">
+					<img src="img/h_back.png"/>
+				</div>
+				收货人信息
+			</header>
+			<section>
+				<ul class="uls_p">
+					<li>
+						<label>收货人：</label>
+						<div class="txt"><input type="text" placeholder="沙发咖啡"/></div>
+					</li>
+					<li>
+						<label>手机号：</label>
+						<div class="txt"><input type="text" placeholder="189-1231-2312"/></div>
+					</li>
+					<li>
+						<label>所在地区：</label>
+						<div class="txt">北京，海淀</div>
+						<a href="javascript:''" class="back"><img src="img/y_back.png"/></a>
+					</li>
+					<li>
+						<label>具体地址：</label>
+						<div class="txt"><input type="text" placeholder="XX路XX楼"/></div>
+					</li>
+				</ul>
+				<div class="up_btn">
+					<button>保存修改</button>
+				</div>
+			</section>
+			<div class="ball"></div>
+			<div class="ball_cont">
+					<div class="conment">
+						<h3>确定返回？</h3>
+						<p>您填写的信息尚未保存，确定返回吗？</p>
+					</div>
+					<div class="btn">
+						<p><a href=""  class="qx">取消</a></p><p><a href="">确认</a></p>
+					</div>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="js/zepto.min.js"></script>
+<script>
+	$(function(){
+		$('.up_btn button').click(function(){
+			$('.ball').show();
+			$('.ball_cont').show();
+		})
+		$('.qx').click(function(){
+			$('.ball').hide();
+			$('.ball_cont').hide();
+		})
+	})
+</script>
+

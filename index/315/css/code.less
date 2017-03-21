@@ -1,0 +1,125 @@
+@import "reset.css";
+.full(@w,@h,@b){
+  width: @w;
+  height: @h;
+  background: @b;
+}
+.box(@var){
+  display: -webkit-box;
+  -webkit-box-orient: @var;
+}
+html,body,.wap{
+  .full(100%,100%,none);
+}
+html{
+  font-size: 62.5%;
+}
+.wap{
+  .box(vertical);
+  header {
+    .full(100%, 3.5rem, #f7f7f7);
+    border-bottom: 0.1rem solid #bfbfbf;
+    .y_top {
+      line-height: 3.5rem;
+      .box(horizontal);
+      .y_left {
+        margin: 0 0.5rem;
+        box-sizing: border-box;
+        .full(1.5rem, 100%, none);
+        text-align: center;
+        img {
+          vertical-align: middle;
+          width: 0.9rem;;
+        }
+      }
+      .y_right {
+        margin: 0 0.5rem;
+        box-sizing: border-box;
+        .full(2.5rem, 100%, none);
+        text-align: center;
+        img {
+          vertical-align: middle;
+          width: 1.6rem;
+        }
+        span{
+          display: inline-block;
+          width: 2.5rem;
+          font-weight: 600;
+        }
+      }
+
+      .y_center {
+        -webkit-box-flex: 1;
+        h3 {
+          font-size: 1.5rem;
+          font-weight: 800;
+          text-align: center;
+        }
+      }
+    }
+  }
+  section{
+    overflow-y: auto;
+    &::-webkit-scrollbar{width: 0};
+    //ÎÒµÄ¶©µ¥
+    .y_dp_e_main{
+
+      .t_code{
+        text-align: center;
+        margin-top: 10rem;
+
+        img{
+          text-align: center;
+          width: 13.3rem;
+        }
+      }
+    }
+  }
+
+}
+//ÕÚÕÖ²ã
+.layer{
+  .full(100%,100%,#4a4a4a);
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.layer_bottom{
+  position: absolute;
+  bottom: 0.8rem;
+  left: 2%;
+  .full(96%,auto,none);
+  display: none;
+  .WeChat{
+    background: #fff;
+    border-radius: 1rem;
+    padding-bottom: 1rem;
+    dl{
+      float: left;
+      padding: 2rem 0.8rem 0 2rem;
+      box-sizing: border-box;
+      dt{
+        height: 3rem;
+        img{
+          .full(3rem,auto,none);
+        }
+      }
+      dd{
+        padding-top: 1rem;
+      }
+    }
+  }
+  button{
+    .full(100%,auto,#fff);
+    margin-top: 1rem;
+    padding: 1rem 0;
+    box-sizing: border-box;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    font-size: 1.4rem;
+  }
+}

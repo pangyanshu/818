@@ -1,0 +1,169 @@
+@import url("reset.css");
+.HELP-containter,
+body,
+html {
+  width: 100%;
+  height: 100%;
+  background: none;
+}
+html {
+  font-size: 62.5%;
+}
+.HELP-containter {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.HELP-containter header {
+  width: 100%;
+  height: 3.5rem;
+  background: #f7f7f7;
+  border-bottom: 1px solid #d9d9d9;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  line-height: 3.5rem;
+}
+.HELP-containter header .head-left img {
+  width: auto;
+  height: 1.7rem;
+  background: none;
+}
+.HELP-containter header .head-center {
+  font-size: 1.8rem;
+  -webkit-box-flex: 1;
+  text-align: center;
+}
+.HELP-containter header .head-right img {
+  width: auto;
+  height: 1.8rem;
+  background: none;
+}
+.HELP-containter section {
+  overflow-y: auto;
+  width: 100%;
+  height: 100%;
+  background: #f2f2f2;
+  -webkit-box-flex: 1;
+}
+.HELP-containter section::-webkit-scrollbar {
+  width: 0;
+}
+.HELP-containter section .H-main-box-one {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  padding: 7px 15px;
+  box-sizing: border-box;
+}
+.HELP-containter section .H-main-box-one p {
+  line-height: 2rem;
+}
+.HELP-containter section .H-main-box-one p img {
+  padding-right: 9px;
+  box-sizing: border-box;
+  width: auto;
+  height: 1.6rem;
+  background: none;
+}
+.HELP-containter section .H-main-big-box {
+  margin-top: 1rem;
+  padding-left: 1rem;
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+}
+.HELP-containter section .H-main-big-box .H-small-one {
+  width: 100%;
+  height: 3rem;
+  background: #ffffff;
+  border-bottom: 1px solid #f2f2f2;
+  line-height: 3rem;
+}
+.HELP-containter section .H-main-big-box .H-small-one b {
+  margin-left: 1.5rem;
+}
+.HELP-containter section .H-main-big-box .H-small-two {
+  padding: 1rem 1rem 1rem 0;
+  box-sizing: border-box;
+  border-bottom: 1px solid #f2f2f2;
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.HELP-containter section .H-main-big-box .H-small-two .H-small-two-right {
+  -webkit-box-flex: 1;
+  padding-right: 1.2rem;
+  box-sizing: border-box;
+}
+.HELP-containter section .H-main-big-box .H-small-three {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  border-bottom: 1px solid #f2f2f2;
+}
+.HELP-containter section .H-main-big-box .H-small-three h3 {
+  padding: 1rem 0 2rem 0;
+  box-sizing: border-box;
+}
+.HELP-containter section .H-main-big-box .H-small-three img {
+  width: auto;
+  height: 5.5rem;
+  background: none;
+  margin: 0 1rem 1.5rem 0;
+}
+.HELP-containter section .H-main-big-box .H-small-four {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  padding: 1.2rem 1.2rem 6px 0;
+  box-sizing: border-box;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  line-height: 7px;
+}
+.HELP-containter section .H-main-big-box .H-small-four .H-small-four-left {
+  -webkit-box-flex: 1;
+}
+.HELP-containter section .H-main-big-box .H-small-four .H-special {
+  color: #ff8738;
+}
+.HELP-containter footer {
+  padding: 5px 10px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 5rem;
+  background: #ffffff;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.HELP-containter footer .H-footerLeft {
+  -webkit-box-flex: 1;
+}
+.HELP-containter footer .H-footerLeft p {
+  color: #666666;
+}
+.HELP-containter footer .H-footerLeft p b {
+  color: #ffa674;
+}
+.HELP-containter footer .H-footerRight {
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+.HELP-containter footer .H-footerRight span {
+  display: inline-block;
+  width: 6rem;
+  height: 2.5rem;
+  background: none;
+  border: 1px solid #ff9c61;
+  border-radius: 6px;
+  line-height: 2.5rem;
+  text-align: center;
+  color: #ff9c61;
+}
+.HELP-containter footer .H-footerRight .none-space {
+  margin-right: 6px;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>二维码</title>
+		<link rel="stylesheet" href="css/code.css"/>
+		<script src="js/jquery-3.1.1.js"></script>
+		
+	</head>
+	<body>
+		<div class="wap">
+			<header>
+				<div class="y_top">
+					<div class="y_left"><img src="img/a1_03.png"/></div>
+					<div class="y_center"><h3>二维码</h3></div>
+					<div class="y_right"><img src="img/矢量智能对象.png"/></div>
+				</div>
+			</header>
+
+			<section>
+				<div class="y_dp_e_main">
+					<div class="t_code">
+						<img src="img/组-3.png"/>
+					</div>
+				</div>
+			</section>
+		</div>
+		<!--遮罩层-->
+		<div class="layer"></div>
+		<div class="layer_bottom">
+			<div class="WeChat">
+				<dl>
+					<dt><img src="img/c__03.png"/></dt>
+					<dd>微信好友</dd>
+				</dl>
+				<dl>
+					<dt><img src="img/c__05.png"/></dt>
+					<dd>朋友圈</dd>
+				</dl>
+				<dl>
+					<dt><img src="img/c__07.png"/></dt>
+					<dd>QQ好友</dd>
+				</dl>
+				<dl>
+					<dt><img src="img/c__09.png"/></dt>
+					<dd>QQ空间</dd>
+				</dl>
+				<dl>
+					<dt><img src="img/c__15.png"/></dt>
+					<dd>新浪微博</dd>
+				</dl>
+				<dl>
+					<dt><img src="img/c__16.png"/></dt>
+					<dd>腾讯微博</dd>
+				</dl>
+				<dl>
+					<dt><img src="img/c__17.png"/></dt>
+					<dd>复制链接</dd>
+				</dl>
+			</div>
+			<button>取消</button>
+		</div>
+	</body>
+	<script>
+		$(function(){
+			$(".y_right > img").click(function(){
+				$(".layer").show();
+				$(".layer_bottom").show();
+			});
+			$(".layer_bottom > button").click(function(){
+				$(".layer").hide();
+				$(".layer_bottom").hide();
+			})
+		})
+	</script>
+</html>

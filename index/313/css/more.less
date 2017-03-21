@@ -1,0 +1,89 @@
+@import url("reset.css");
+//封装公公样式
+.whb(@w, @h, @b) {
+    width: @w;
+    height: @h;
+    background: @b;
+}
+.box(@dir:vertical) {
+    display: -webkit-box;
+    -webkit-box-orient: @dir;
+}
+.MORE-containter,
+body,
+html {
+    .whb(100%,100%,none);
+   
+}
+html{
+     font-size: 62.5%;
+}
+//更多页面
+.MORE-containter {
+    .box;
+    header {
+        .whb(100%,3.5rem,#f7f7f7);
+        border-bottom: 1px solid #d9d9d9;
+        .box(horizontal);
+        padding: 0 1rem;
+        box-sizing: border-box;
+        line-height: 3.5rem;
+        .head-left {
+            img {
+                .whb(auto,1.7rem,none);
+            }
+        }
+        .head-center {
+            font-size: 1.8rem;
+            -webkit-box-flex: 1;
+            text-align: center;
+
+        }
+    }
+    section {
+        -webkit-box-flex: 1;
+        .whb(100%,100%,#f2f2f2);
+        .MORE-main-box1 {
+            .whb(100%,4rem,white);
+            padding: 0 10px;
+            box-sizing: border-box;
+            .box(horizontal);
+            .MORE-main-box1-left {
+                -webkit-box-flex: 1;
+                font-size: 1.4rem;
+                line-height: 4rem;
+            }
+            .MORE-main-box1-right {
+                line-height: 4rem;
+                & > img {
+                    .whb(10px,auto,#f2f2f2);
+                }
+
+            }
+        }
+        .MORE-main-box2 {
+            margin-top: 10px;
+            .whb(100%,auto,white);
+                .MORE-main-box1 {
+                    .whb(100%,4rem,white);
+                    padding: 0 10px;
+                    box-sizing: border-box;
+                    .box(horizontal);
+                    border-bottom:1px solid #f2f2f2;
+                    .MORE-main-box1-left {
+                        -webkit-box-flex: 1;
+                        font-size: 1.4rem;
+                        line-height: 4rem;
+                    }
+                    .MORE-main-box1-right {
+                        line-height: 4rem;
+                        & > img {
+                            .whb(10px,auto,none);
+                        }
+
+                    }
+                }
+            
+        }
+    }
+}

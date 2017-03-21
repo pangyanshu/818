@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/dianpuzhuangxiu.css"/>
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <script type="text/javascript" src="js/zepto.min.js">
+	    	
+	    </script>
+	</head>
+	<body>
+		<div class="box">
+			<header>
+				<div class="h_left" >
+					<img src="yc/shop_fiitting/shop_fiitting2_03.png" ui-sref="fan"/>
+				</div>
+				<h1>装修店铺</h1>
+				<div class="h_right">
+					<a href="">保存</a>
+					<a href="">取消</a>
+				</div>
+			</header>
+			<section>
+				<dl>
+					<dt><h1 style="font-size: 1.4rem; padding: 5px; color: #333333">店铺背景</h1></dt>
+					<dd><img src="yc/shop_fiitting2/images/shop_fiitting2_06.png"/ style="width: 100%; height: 12rem;"></dd>
+				</dl>  
+				<dl>
+					<dt><h1 style="font-size: 1.4rem; padding: 5px; color: #333333">轮播图一</h1></dt>
+					<dd><img src="yc/shop_fiitting2/images/shop_fiitting2_08.png"/ style="width: 100%; height: 12rem;">
+					<p style="color: #333333;">关联产品:[无产品]</p>
+					</dd>
+				</dl>
+				<dl>
+					<dt><h1 style="font-size: 1.4rem; padding: 5px; color: #333333">轮播图二</h1></dt>
+					<dd><img src="yc/shop_fiitting2/images/shop_fiitting2_08.png"/ style="width: 100%; height: 12rem;">
+					</dd>
+				</dl>
+			</section>
+			<div class="zz">11</div>
+			<div class="zz_con">
+				<div class="conment">
+					<p>更换店铺背景图</p>
+					<p>取消</p>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$("h1").tap(function(){
+			$(".zz").show();
+			$(".zz_con").show();
+		})
+		$("p").tap(function(){
+			$(".zz").hide();
+			$(".zz_con").hide();
+		})
+		
+	</script>
+</html>

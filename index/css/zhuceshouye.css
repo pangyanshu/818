@@ -1,0 +1,129 @@
+@import url("reset.css");
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "宋体";
+}
+.box {
+  width: 100%;
+  height: 100%;
+  background: none;
+}
+.box section {
+  width: 100%;
+  height: 100%;
+  background: none;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.box section .s_logo {
+  width: 100%;
+  height: 20rem;
+  background: none;
+  position: relative;
+}
+.box section .s_logo img {
+  width: 100px;
+  height: 100px;
+  background: none;
+  position: absolute;
+  top: 30%;
+  left: 40%;
+}
+.box section .s_logo h1 {
+  position: absolute;
+  top: 75%;
+  left: 49%;
+  font-size: 1.4rem;
+  color: #ccc;
+}
+.box section .s_tel {
+  width: 100%;
+  height: 4rem;
+  background: none;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.box section .s_tel img {
+  padding-left: 32px ;
+  width: 3rem;
+  height: 3rem;
+  background: none;
+  margin-top: 12px;
+}
+.box section .s_tel .s_tel_list {
+  -webkit-box-flex: 1;
+  border-bottom: 1px solid #ff7d1b;
+  margin-left: 10px ;
+  margin-right: 24px;
+}
+.box section .s_tel .s_tel_list input {
+  margin-left: 10px;
+  border: none;
+  background: none;
+  outline: none;
+}
+.box section .s_pwd {
+  width: 100%;
+  height: 4rem;
+  background: none;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  line-height: 3rem;
+  margin-top: 10px;
+}
+.box section .s_pwd img {
+  padding-left: 32px ;
+  width: 3rem;
+  height: 3rem;
+  background: none;
+  margin-top: 12px;
+}
+.box section .s_pwd .s_pwd_list {
+  -webkit-box-flex: 1;
+  border-bottom: 1px solid #ff7d1b;
+  margin-left: 10px ;
+  margin-right: 24px;
+}
+.box section .s_pwd .s_pwd_list input {
+  padding: 6px 40px;
+  margin-left: 10px;
+  border: none;
+  background: none;
+  outline: none;
+}
+.box section .botton1 {
+  margin-top: 3rem;
+  margin: 10px 15px;
+}
+.box section .botton1 button {
+  width: 100%;
+  height: 4rem;
+  background: #ff7d1b;
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+  color: white;
+}
+.box section .s_bottom {
+  width: 100%;
+  height: 2rem;
+  background: none;
+  margin-top: 10px;
+}
+.box section .s_bottom a {
+  float: left;
+  font-size: 1.4px;
+  padding-left: 16px;
+  color: #507daf;
+}
+.box section .s_bottom span {
+  float: right;
+  font-size: 1.4px;
+  padding-right: 16px;
+  color: #507daf;
+}

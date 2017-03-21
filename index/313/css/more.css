@@ -1,0 +1,93 @@
+@import url("reset.css");
+.MORE-containter,
+body,
+html {
+  width: 100%;
+  height: 100%;
+  background: none;
+}
+html {
+  font-size: 62.5%;
+}
+.MORE-containter {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.MORE-containter header {
+  width: 100%;
+  height: 3.5rem;
+  background: #f7f7f7;
+  border-bottom: 1px solid #d9d9d9;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  line-height: 3.5rem;
+}
+.MORE-containter header .head-left img {
+  width: auto;
+  height: 1.7rem;
+  background: none;
+}
+.MORE-containter header .head-center {
+  font-size: 1.8rem;
+  -webkit-box-flex: 1;
+  text-align: center;
+}
+.MORE-containter section {
+  -webkit-box-flex: 1;
+  width: 100%;
+  height: 100%;
+  background: #f2f2f2;
+}
+.MORE-containter section .MORE-main-box1 {
+  width: 100%;
+  height: 4rem;
+  background: #ffffff;
+  padding: 0 10px;
+  box-sizing: border-box;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.MORE-containter section .MORE-main-box1 .MORE-main-box1-left {
+  -webkit-box-flex: 1;
+  font-size: 1.4rem;
+  line-height: 4rem;
+}
+.MORE-containter section .MORE-main-box1 .MORE-main-box1-right {
+  line-height: 4rem;
+}
+.MORE-containter section .MORE-main-box1 .MORE-main-box1-right > img {
+  width: 10px;
+  height: auto;
+  background: #f2f2f2;
+}
+.MORE-containter section .MORE-main-box2 {
+  margin-top: 10px;
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+}
+.MORE-containter section .MORE-main-box2 .MORE-main-box1 {
+  width: 100%;
+  height: 4rem;
+  background: #ffffff;
+  padding: 0 10px;
+  box-sizing: border-box;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  border-bottom: 1px solid #f2f2f2;
+}
+.MORE-containter section .MORE-main-box2 .MORE-main-box1 .MORE-main-box1-left {
+  -webkit-box-flex: 1;
+  font-size: 1.4rem;
+  line-height: 4rem;
+}
+.MORE-containter section .MORE-main-box2 .MORE-main-box1 .MORE-main-box1-right {
+  line-height: 4rem;
+}
+.MORE-containter section .MORE-main-box2 .MORE-main-box1 .MORE-main-box1-right > img {
+  width: 10px;
+  height: auto;
+  background: none;
+}

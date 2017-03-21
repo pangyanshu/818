@@ -1,0 +1,113 @@
+@import "reset.css";
+
+.full(@w,@h,@bg){
+        width: @w;
+        height: @h;
+        background: @bg;
+}
+
+.box(@ver:vertical){
+        display: -webkit-box;
+        -webkit-box-orient: @ver;
+}
+
+html,body , .works{
+        .full(100%,100%,none);
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.wap{
+    .works{
+        .box;
+         header{
+            .full(100%,3.5rem,#f7f7f7);
+            position: relative;
+            font-size: 1.6rem;
+            text-align: center;
+            line-height: 3.5rem;
+            border-bottom: 1px solid #bfbfbf;
+            .h_back{
+                position: absolute;
+                left: 10px;
+                img{.full(1rem,auto,none);}
+            }
+        }
+        section{
+            -webkit-box-flex: 1;
+            background: #f2f2f2;
+            overflow-y: auto;
+            &::-webkit-scrollbar{width: 0};
+             .w_list{
+                li{
+                    .full(100%,4rem,#ffffff);
+                    line-height: 4rem;
+                    padding:0 1rem;
+                    border-bottom: 1px solid #f2f2f2;
+                    .box(horizontal);
+                    p{
+                        -webkit-box-flex: 1;
+                    }
+                    img{
+                        .full(1.5rem,auto,none);
+                    }
+                    &:last-child{border: none;}
+                }
+            }
+            .w_btn{
+                padding: 15px 10px 0 10px;
+                button{
+                    .full(100%,3rem,#ff7f1d);
+                    border: none;
+                    outline: none;
+                    border-radius: 5px;
+                    color: #FFFFFF;
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+    
+    .xiaoxi{
+        section{
+            .msg_list{
+                li{
+                    .full(100%,6rem,#FFFFFF);
+                    .box(horizontal);
+                     border-bottom: 1px solid #bfbfbf;
+                    dl{
+                        -webkit-box-flex: 1;
+                        .box(horizontal);
+                        padding-left: 1rem;
+                        box-sizing: border-box;
+                        margin-top:1rem ;
+                        dt{
+                            margin-right: 1rem;
+                            img{
+                              width: 3.5rem;
+                              vertical-align: middle;
+                            }
+                        }
+                        dd{
+                            p{font-size: 1.4rem; line-height: 2.1rem}
+                            span{color: #9c9c9c;font-size: 1.2rem;}
+                        }
+                    }
+                    time{
+                        display: inline-block;
+                        .full(5rem,100%,none);
+                        text-align: right;
+                        line-height: 6rem;
+                        //margin-right: 0.5rem;
+                        color: #9c9c9c;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
