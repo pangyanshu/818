@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<meta name=”viewport” content=”width=device-width, initial-scale=1, maximum-scale=1″/>
+<link href="css/reset.css" rel="stylesheet" type="text/css" />
+<link href="css/index.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="js/jQuery.js" ></script>
+<script type="text/javascript" src="js/swipe.js" ></script>
+<script type="text/javascript" src="js/zepto.js" ></script>
+<!--图片轮播所用 --> 
+
+<title>中国软件网详情页</title>
+</head>
+<body style="background:#3f3f3f;">
+<div style="top:0px;left:0px;width:100%;height:100%;position:fixed;z-index:-999;background:url(images/bg.png) no-repeat #3f3f3f;background-size: cover; background-position: 50% 50%;"> </div>
+
+<div class="top_banner"><div class="back"><a href="bangdan.html"><img src="images/back.png"/></a></div><span>2017中国企业服务选型排行榜</span></div>
+
+<div class="banner">
+<!--幻灯片管理-->
+		<div style="-webkit-transform:translate3d(0,0,0);">
+			<div id="banner_box" class="box_swipe">
+				<ul>
+					<li><img src="images/lb1.png" alt="1" style="width:100%;" /></li>
+					<li><img src="images/lb2.png" alt="1" style="width:100%;" /></li>
+				</ul>
+				<ol>
+					<li class="on"></li>
+					<li></li>
+				</ol>
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+		$(function(){
+			new Swipe(document.getElementById('banner_box'), {
+				speed:500,
+				auto:3000,
+				callback: function(){
+					var lis = $(this.element).next("ol").children();
+					lis.removeClass("on").eq(this.index).addClass("on");
+				}
+			});
+		});
+		</script>
+</div>
+
+<div class="box">
+  
+  <div class="con_box_f">
+    <span>北京神州云动科技股份有限公司</span>
+    <ul>
+      <li style="margin-top:10px;"><img src="images/bta.png"/>神州云动成立于08年。前三年为Salesforce.com全球咨询实施商， 后推出自主知识产权SaaS及PaaS产品CloudCC.com，是小到1人企业，大到世界500强都在使用的PaaS+CRM。13年登陆新三板，股票代码430262神州云动。15年获阿米巴基金A轮融资。曾获德勤“中关村成长20强”“北京百强品牌”等奖项。广泛应用于：IT高科技、金融、教育、消费品、制造业、医疗器械行业等超过5000多家企业。被业界称为“上市公司使用的CRM”。</li>
+      <li><img src="images/btb.png"/>神州云动的产品中最著名的有：市场云、销售云、服务云、 CloudCC PaaS平台等。</li>
+      <li><img src="images/btc.png"/>作为国内唯一一家PaaS+SaaS的CRM厂商，神州云动CloudCC被众多上市公司集团深入使用，很多大客户已经将其整体应用架构设计在CloudCC.com上。如骆驼股份，4年的建设，已经将销售公司、几百家一级代理、几千家二级代理、几万家门店、直营电商和微商、京东和天猫店等，全部用CloudCC连接在一起，完成集团整体大数据体系建设。</li>
+      <li><img src="images/lxwm.png"/>      
+公司地址：北京市海淀区上地三街9号金隅嘉华大厦A座10层1009<br/>
+联  系 人：Bill Gates<br/>
+联系方式：18510068625<br/>
+企业邮箱：123456@163.com</li>
+
+<li><img src="images/btd.png"/>      
+</li>
+    </ul>
+  
+  </div>
+  
+  <form action="" method="get" class="box_form">
+
+   <ul>
+    <li>
+      <textarea name="" cols="" rows="" placeholder="请输入您想对我们说的话..." class="form_textarea"></textarea>
+    </li>
+
+    
+   </ul>
+   
+   <div class="form_button"><a href="index.html"><input name="" type="button"  style="width:270px; background:url(images/a5.png) no-repeat center; height:43px;background-size: cover;cursor:pointer;"/></a></div>
+
+</form>
+
+  <div class="dp_list">
+   <span><img src="images/ico1.png" width="15" height="15"  style="margin-top:16px; float:left;"/>&nbsp;用户评论内容：</span>
+    <ul>
+      <li>我们和他们有合作，服务非常棒。。。</li>
+      <li>市场云很实用，友情推荐大家使用，超赞！实用，友情推荐大家使</li>
+    </ul>
+  </div>
+
+
+
+
+</div>
+
+</body>
+</html>

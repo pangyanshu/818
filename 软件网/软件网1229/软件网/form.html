@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<meta name=”viewport” content=”width=device-width, initial-scale=1, maximum-scale=1″/>
+<link href="css/reset.css" rel="stylesheet" type="text/css" />
+<link href="css/index.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/jquery-labelauty.js"></script>
+<script type="text/javascript">
+$(function(){
+	$(':input').labelauty();
+});
+</script>
+<!--必要样式-->
+<link rel="stylesheet" href="css/jquery-labelauty.css" />
+
+<title>中国软件网表单</title>
+</head>
+<body style="background:#3f3f3f;">
+<div style="top:0px;left:0px;width:100%;height:100%;position:fixed;z-index:-999;background:url(images/bg.png) no-repeat #3f3f3f;background-size: cover; background-position: 50% 50%;"> </div>
+
+<div class="top_banner"><div class="back"><a href="index.html"><img src="images/back.png"/></a></div><span>2017中国企业服务选型排行榜</span></div>
+
+
+
+<div class="box">
+<form action="" method="get" class="box_form">
+
+  <ul>
+    <li>
+      <span>公司名称</span>
+      <input name="" type="text" value="请输入公司名称" onfocus="if (value =='请输入公司名称'){value =''}" onblur="if (value ==''){value='请输入公司名称'}" />
+    </li>
+    <li>
+      <span>联系人</span>
+     <input name="" type="text" value="请输入您的姓名" onfocus="if (value =='请输入您的姓名'){value =''}" onblur="if (value ==''){value='请输入您的姓名'}" />
+    </li>
+    <li>
+      <span>联系电话</span>
+      <input name="" type="text" value="请输入您的联系方式" onfocus="if (value =='请输入您的联系方式'){value =''}" onblur="if (value ==''){value='请输入您的联系方式'}" />
+    </li>
+    <li>
+      <span>公司地址</span>
+      <input name="" type="text" value="请输入您的公司地址" onfocus="if (value =='请输入您的公司地址'){value =''}" onblur="if (value ==''){value='请输入您的公司地址'}" />
+    </li>
+     <li>
+      <span>申请类型</span>
+      
+      <div class="form_xx">
+        <ul>
+          <li><input type="radio" name="radio" data-labelauty="CRM"></li>
+          <li><input type="radio" name="radio" data-labelauty="HR"></li>
+          <li style="margin-right:0px;"><input type="radio" name="radio" data-labelauty="OA"></li>
+          <li><input type="radio" name="radio" data-labelauty="ERP"></li>
+          <li><input type="radio" name="radio" data-labelauty="移动应用"></li>
+          <li style="margin-right:0px;"><input type="radio" name="radio" data-labelauty="大数据"></li>
+          <li><input type="radio" name="radio" data-labelauty="云计算"></li>
+          <li><input type="radio" name="radio" data-labelauty="应用软件"></li>
+          <li style="margin-right:0px;"><input type="radio" name="radio" data-labelauty="安全软件"></li>
+          <li><input type="radio" name="radio" data-labelauty="行业软件"></li>
+          <li><input type="radio" name="radio" data-labelauty="基础软件"></li>
+          
+        </ul>
+      </div>
+      
+    </li>
+    
+    <div class="form_button"><a href="index.html"><input name="" type="button"  style="width:270px; background:url(images/a2.png) no-repeat center; height:43px;background-size: cover;cursor:pointer;"/></a></div>
+    
+  </ul>
+
+
+</form>
+</div>
+
+</body>
+</html>

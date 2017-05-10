@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name=”viewport” content=”width=device-width, initial-scale=1, maximum-scale=1″/>
+		<link href="css/reset.css" rel="stylesheet" type="text/css" />
+		<link href="css/index.css" rel="stylesheet" type="text/css" />
+
+		<script type="text/javascript" src="js/jQuery.js"></script>
+		<script type="text/javascript" src="js/swipe.js"></script>
+		<script type="text/javascript" src="js/zepto.js"></script>
+		<!--图片轮播所用 -->
+
+		<!--<link rel="stylesheet" href="css/meanmenu.min.css" media="all" />-->
+		
+		<title>中国软件网首页</title>
+	</head>
+
+	<body style="background:#f6f6f6;">
+		<div class="wrapper">
+			<div class="header" style="background: #1887d6;">
+				<div class="top_banner">
+					<div style="position:absolute;top:22px; left:15px;">
+						<a href="bangdan.html"><img src="images/index_g.png" width="22" height="18" /></a>
+					</div><span>中国软件网</span></div>
+			</div>
+			<section>
+				<!--幻灯片管理-->
+				<div class="banner">
+					<img src="images/333_02.png" style="width:100%; height: 200px;" />
+				</div>
+				
+				<div class="int1">
+					<dl>
+						<dt><img src="indexmages/应用软件@2x.png"/></dt>
+						<dd>应用软件</dd>
+					</dl>
+					<dl>
+						<dt><img src="indexmages/行业软件@2x.png"/></dt>
+						<dd>行业软件</dd>
+					</dl>
+					<dl>
+						<dt><img src="indexmages/移动应用@2x.png"/></dt>
+						<dd>手机应用</dd>
+					</dl>
+				</div>
+				<div class="hot_more">
+					<div class="hot_more_l">
+						<h2>热门推荐</h2>
+					</div>
+					<div class="hot_more_r">
+						<span>更多 <img src="indexmages/gengduo@2x.png" alt="" /></span>
+					</div>
+				</div>
+				<div class="img_log">
+					<dl>
+						<dt><img src="indexmages/CRM@2x.png"/></dt>
+						<dd>CRM</dd>
+					</dl>
+					<dl>
+						<dt><img src="indexmages/HR@2x.png"/></dt>
+						<dd>HR</dd>
+					</dl>
+					<dl>
+						<dt><img src="indexmages/111_03.png"/></dt>
+						<dd>OA</dd>
+					</dl>
+					<dl>
+						<dt><img src="indexmages/ERP@2x.png"/></dt>
+						<dd>ERP</dd>
+					</dl>
+					<dl>
+						<dt><img src="indexmages/财务@2x.png"/></dt>
+						<dd>财务</dd>
+					</dl>
+				</div>
+				</section>
+				<div class="footer">
+				<dl>
+					<dt><img src="indexmages/yunjisuan@2x.png"/></dt>
+					<dd>云计算</dd>
+				</dl>
+				<dl>
+					<dt><img src="indexmages/dashuju@2x.png"/></dt>
+					<dd>大数据</dd>
+				</dl>
+				<dl>
+					<dt><img src="indexmages/anquan@2x.png"/></dt>
+					<dd>安全</dd>
+				</dl>
+			</div>
+			</div>
+			
+	</div>
+
+	</body>
+	<script type="text/javascript">
+		$(function() {
+			new Swipe(document.getElementById('banner_box'), {
+				speed: 500,
+				auto: 3000,
+				callback: function() {
+					var lis = $(this.element).next("ol").children();
+					lis.removeClass("on").eq(this.index).addClass("on");
+				}
+			});
+		});
+	</script>
+
+</html>

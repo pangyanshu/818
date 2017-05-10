@@ -1,0 +1,192 @@
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	font-size: 62.5%;
+}
+
+.wrapper {
+	width: 100%;
+	height: 100%;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+}
+
+.header {
+	width: 100%;
+	height: 60px;
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+}
+
+.top_banner span {
+	text-align: center;
+	font-size: 1em;
+	color: #FFF;
+	float: right;
+	line-height: 60px;
+	width: 100%;
+}
+
+.top_banner {
+	width: 100%;
+	height: 60px;
+}
+
+.section {
+	-webkit-box-flex: 1;
+	overflow: auto;
+	width: 100%;
+	/*height: 1410px;*/
+	
+}
+
+
+/*公司介绍*/
+
+.introduce {
+	width: 100%;
+	height: 50px;
+	border-bottom: 1px solid #dbdbdb;
+}
+
+.introduce dl {
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+	padding: 15px;
+}
+
+.introduce dl dd {
+	margin-left: 10px;
+	font-weight: bold;
+}
+
+
+/*内容*/
+
+.content {
+	height: 80px;
+	border-bottom: 12px solid #DBDBDB;
+	overflow: hidden;
+}
+
+.content p {
+	text-indent: 2em;
+	width: 90%;
+	padding: 5px 10px;
+}
+
+
+/*需求图*/
+
+.need {
+	border-bottom: 12px solid #DBDBDB;
+}
+
+
+/*案例分析*/
+
+.f_bottom {
+	width: 100%;
+	height: 60px;
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+	background: white;
+	/*margin-top: 100px;*/
+}
+
+.report {
+	width: 100%;
+	height: 120px;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	border-bottom: 12px solid #DBDBDB;
+}
+
+.report .r_one {
+	height: 40px;
+	line-height: 40px;
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+	border-bottom: 1px solid #D2DFF0;
+}
+
+.report .r_one h3 {
+	padding-left: 15px;
+	display: inline;
+	width: 95px;
+	height: 37px;
+}
+.report .r_one span{
+	margin-left: 10px;
+	color: #B6B6B6;
+	width: 95px;
+	height: 37px;
+	padding-right: 15px;
+}
+.report .r_one p {
+	text-align: center;
+	-webkit-box-flex: 1;
+	color: #b6b6b6;
+}
+/*联系我们*/
+.f_bottom dl {
+	text-align: center;
+	-webkit-box-flex: 1;
+	color: #333333;
+}
+/*内容*/
+.location{
+	width: 100%;
+	height: 150px;
+	border-bottom: 12px solid #DBDBDB;
+}
+.location ul{
+	padding: 15px;
+	box-sizing: border-box;
+}
+.location ul li{
+	line-height: 25px;
+}
+.form_textarea {
+	width:100%;
+	border: none;
+	/*margin-left: 15px;*/
+	border-radius: 5px;
+	line-height: 35px;
+	color: #6b6b6b;
+	font-size: .8em;
+	height: 170px;
+}
+.join{
+	width: 100%;
+	height: 145px;
+	text-align: center;
+}
+.join button{
+	margin-top: 25px;
+	width: 200px;
+	height: 40px;
+	background:-webkit-linear-gradient(left,#1a8edb,#095caa);
+	border: none;
+	border-radius: 5px;
+	color: white;
+	font-weight: bold;
+	font-size: 16px;
+	
+}
+/*底部*/
+
+.f_bottom dl dt img {
+	padding: 8px;
+	box-sizing: border-box;
+	width: 30px;
+	height: 30px;
+}
+
+.f_bottom dl:nth-child(1) {
+	color: #0075c4;
+}
