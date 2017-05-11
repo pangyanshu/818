@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style>
+    *{margin: 0;
+    padding: 0;
+    list-style: none}
+
+</style>
+<script>
+    var canvas = document.createElement('canvas');//创建画布标签
+    document.body.appendChild(canvas);//将画布添加到文档中去
+    canvas.style.background = 'black';//设置画布背景色
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    var context = canvas.getContext('2d');
+    var part = [];//用于存储产生的圆；
+
+    function loop() {
+        setInterval(function () {
+            context.clearRect(0,0,canvas.width,canvas.height);
+            var p1 = new produce(canvas.width/2,canvas.height/2);
+            part.push(p1);
+            for(var i = 0;i<part.length;i++){
+                part[i].update();
+            }
+        },30)
+    };
+    loop();
+    function produce(x,y) {
+        this.x = x;
+        this.y = y;
+        this.xVal = Math.random()*4-2;
+        this.yVal = -5;
+        this.yL = 0.08;
+        this.draw = function () {
+            context.beginPath();
+            //画圆
+//          context.arc(this.x,this.y,20,0,Math.PI*2,false);
+            context.fillStyle = getColor();
+            context.fill();
+            context.fillText("司杰武", this.x, this.y);
+            context.closePath();
+        };
+        this.update = function () {
+            this.x = this.x +this.xVal;
+            this.yVal = this.yVal+this.yL;
+            this.y = this.y + this.yVal;
+            this.draw();
+        }
+    };
+    function getColor() {
+        return '#'+Math.floor(Math.random()*(1<<24)).toString(16);
+    }
+</script>
+</body>
+</html>
