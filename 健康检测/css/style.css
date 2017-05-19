@@ -1,0 +1,248 @@
+@import url(reset.css);
+html,
+body,
+.wrap {
+  width: 100%;
+  height: 100%;
+  background: 0;
+}
+html {
+  font-size: 62.5%;
+}
+.wrap {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.wrap header {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 100%;
+  height: 4.2rem;
+  background: #45c8a6;
+  position: relative;
+}
+.wrap header h2 {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+}
+.wrap header h2 img {
+  width: 9px;
+  height: auto;
+  background: none;
+}
+.wrap header h3 {
+  -webkit-box-flex: 1;
+  text-align: center;
+  color: white;
+  font-size: 1.6rem;
+  line-height: 4.2rem;
+}
+.wrap section {
+  -webkit-box-flex: 1;
+  overflow-y: auto ;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.wrap section .main {
+  -webkit-box-flex: 1;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.wrap section .main .ccc {
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  display: none;
+}
+.wrap section .main .ccc:nth-child(1) {
+  display: block;
+}
+.wrap section .main .ccc .m_one {
+  width: 100%;
+  height: 338px;
+  background: #f0f0f0;
+  border-radius: 5px;
+  box-shadow: 0 5px 5px #dfebe9;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.wrap section .main .ccc .m_one > div {
+  width: 100%;
+  display: none;
+  padding: 10px;
+}
+.wrap section .main .ccc .m_one .o_1 {
+  width: 100%;
+  height: 55px;
+  background: none;
+  border-bottom: 1px solid #e5e5e5;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.wrap section .main .ccc .m_one .o_1 .o_2 {
+  text-align: right;
+  width: 120px;
+  height: 55px;
+  background: none;
+}
+.wrap section .main .ccc .m_one .o_1 .o_2 h4 {
+  color: #36d3c0;
+  margin-top: 4px;
+}
+.wrap section .main .ccc .m_one .o_1 .o_2 h4 img {
+  width: auto;
+  height: 20px;
+  background: none;
+  vertical-align: middle;
+  margin-left: 4px;
+}
+.wrap section .main .ccc .m_one .o_1 .o_2 h5 {
+  margin-top: 5px;
+}
+.wrap section .main .ccc .m_one .o_1 dl {
+  -webkit-box-flex: 1;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.wrap section .main .ccc .m_one .o_1 dl dt img {
+  width: auto;
+  height: 45px;
+  background: none;
+  margin-right: 10px;
+}
+.wrap section .main .ccc .m_one .o_1 dl dd h2 {
+  font-size: 2.3rem;
+  line-height: 2.8rem;
+}
+.wrap section .main .ccc .m_one .o_1 dl dd h2 img {
+  width: auto;
+  height: 21px;
+  background: none;
+  margin-left: 5px;
+}
+.wrap section .main .ccc .m_one .o_3 {
+  height: 242px;
+  margin-top: 10px;
+  background: white;
+}
+.wrap section .main .ccc .m_one .o_3 table {
+  width: 100%;
+  height: 100%;
+  background: none;
+  text-align: center;
+}
+.wrap section .main .ccc .m_one .o_3 table td {
+  width: 50%;
+  height: auto;
+  background: none;
+  border: 1px solid #e5e5e5;
+}
+.wrap section .main .ccc .m_one .m_one_o {
+  display: block;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.wrap section .main .ccc .m_one1 {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.wrap section .main .ccc .m_one1 dl {
+  -webkit-box-flex: 1;
+  text-align: center;
+  margin-right: 15px;
+  margin-top: 10px;
+  font-size: 1.6rem;
+}
+.wrap section .main .ccc .m_one1 dl:nth-child(4) {
+  margin-right: 0;
+}
+.wrap section .main .ccc .m_one1 dl img {
+  width: auto;
+  height: 35px;
+  background: none;
+}
+.wrap section .main .ccc .m_one1 dl dt {
+  padding-top: 10px;
+}
+.wrap section .main .ccc .m_one1 dl dd {
+  padding: 10px 0;
+}
+.wrap section .main .ccc .m_one1 .bbb {
+  background: #36d3c0;
+  color: white;
+  border-radius: 5px;
+}
+.wrap section .s_top {
+  width: 100%;
+  height: 36px;
+  background: none;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  border-bottom: 1px solid #cecece;
+}
+.wrap section .s_top ul {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-flex: 1;
+}
+.wrap section .s_top ul li {
+  -webkit-box-flex: 1;
+  text-align: center;
+  line-height: 35px;
+  font-size: 1.4rem;
+  position: relative;
+}
+.wrap section .s_top ul li span {
+  display: inline-block;
+  width: 100%;
+  height: 2px;
+  background: #45c8a6;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  display: none;
+}
+.wrap section .s_top ul .t_first {
+  color: #45c8a6;
+}
+.wrap section .s_top ul .t_first span {
+  display: block;
+}
+.wrap section .s_top .t_1 {
+  width: 3.5rem;
+  height: 36px;
+  background: none;
+}
+.wrap section .s_top .t_1 img {
+  width: auto;
+  height: 16px;
+  background: none;
+  margin-top: 0.9rem;
+}
+.wrap footer {
+  width: 100%;
+  height: 4.5rem;
+  background: #45c8a6;
+}
+.wrap footer ul {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.wrap footer ul li {
+  -webkit-box-flex: 1;
+  text-align: center;
+  line-height: 4.5rem;
+  color: white;
+}
+.wrap footer ul li img {
+  width: auto;
+  height: 27px;
+  background: none;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.wrap footer ul li:nth-child(2) {
+  border-left: 1px solid white;
+}
