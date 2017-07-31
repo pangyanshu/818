@@ -223,16 +223,19 @@
 <script src="js/jquery-3.1.1.js"></script>
 <script>
 var arr=['xin1_03','bu1_03','shui1_06','jiuzuo1_12'];
-	$('.s_top ul li').on('click',function(){
-		$(this).addClass('t_first').siblings().removeClass('t_first');
-		$('.main .ccc').hide().eq($(this).index()).show();
-	})
+
+//控制的是上面	自己手表  妈妈手表爸爸手表这一块
+//	$('.s_top ul li').on('click',function(){
+//		$(this).addClass('t_first').siblings().removeClass('t_first');
+//		$('.main .ccc').hide().eq($(this).index()).show();
+//	})
 	$('.m_one1 dl').on('click',function(){
 		$.each($('.m_one1 dl'), function(i,v) {
 			$('.m_one1 dl').eq(i).find('img').attr('src',"img/"+arr[i]+".png");
 		});
 		$(this).addClass('bbb').siblings().removeClass('bbb');
-		$('.ccc .m_one>div').eq($(this).index()).show().siblings().hide();
+//		可有可无的东西
+//		$('.ccc .m_one>div').eq($(this).index()).show().siblings().hide();
 		var imgDataSrc = $(this).find('img').attr('data-Src');
 		$(this).find('img').attr('src',imgDataSrc);
 	})
